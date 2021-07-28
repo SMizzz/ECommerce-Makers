@@ -15,6 +15,15 @@ class HomeViewController: TabmanViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     viewSetup()
+    setLogo()
+  }
+  
+  func setLogo() {
+    navigationController?.navigationBar.barTintColor = .white
+    let kakaoMakersLogoImage = UIImage(named: "kakaomakerslogo")
+    let logoImageView = UIImageView(image: kakaoMakersLogoImage)
+    logoImageView.contentMode = .scaleAspectFit
+    navigationItem.titleView = logoImageView
   }
   
   func viewSetup() {
@@ -32,16 +41,16 @@ class HomeViewController: TabmanViewController {
     let bar = TMBar.ButtonBar()
     bar.backgroundView.style = .blur(style: .light)
     bar.backgroundColor = .white
-    bar.layout.contentInset = UIEdgeInsets(top: 0, left: 95, bottom: 0, right: 95)
-    bar.layout.interButtonSpacing = 20
-    bar.layout.transitionStyle = .snap
     bar.layout.contentMode = .intrinsic
+    bar.layout.contentInset = UIEdgeInsets(top: 0, left: 63, bottom: 0, right: 55)
+    bar.layout.interButtonSpacing = 40
+    bar.layout.transitionStyle = .snap
     bar.indicator.weight = .light
     bar.indicator.tintColor = .black
     bar.buttons.customize { (button) in
       button.tintColor = .black
       button.selectedTintColor = .black
-      button.font = UIFont.systemFont(ofSize: 14)
+      button.font = UIFont.systemFont(ofSize: 16)
     }
     addBar(bar, dataSource: self, at: .top)
   }
