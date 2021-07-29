@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0237E16826B2416200E20A24 /* AllItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E16626B2416200E20A24 /* AllItemTableViewCell.swift */; };
+		0237E16926B2416200E20A24 /* AllItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0237E16726B2416200E20A24 /* AllItemTableViewCell.xib */; };
+		0237E17126B24E1900E20A24 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E17026B24E1900E20A24 /* ItemData.swift */; };
+		0237E17826B2859000E20A24 /* OpenItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E17626B2859000E20A24 /* OpenItemTableViewCell.swift */; };
+		0237E17926B2859000E20A24 /* OpenItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0237E17726B2859000E20A24 /* OpenItemTableViewCell.xib */; };
+		0237E17C26B2D61E00E20A24 /* OpenItemTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E17B26B2D61E00E20A24 /* OpenItemTitleCell.swift */; };
 		023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CADE126AE51150092EB89 /* AppDelegate.swift */; };
 		023CADE426AE51150092EB89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CADE326AE51150092EB89 /* SceneDelegate.swift */; };
 		023CADE626AE51150092EB89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CADE526AE51150092EB89 /* ViewController.swift */; };
@@ -36,6 +42,12 @@
 
 /* Begin PBXFileReference section */
 		021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0237E16626B2416200E20A24 /* AllItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemTableViewCell.swift; sourceTree = "<group>"; };
+		0237E16726B2416200E20A24 /* AllItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllItemTableViewCell.xib; sourceTree = "<group>"; };
+		0237E17026B24E1900E20A24 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		0237E17626B2859000E20A24 /* OpenItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenItemTableViewCell.swift; sourceTree = "<group>"; };
+		0237E17726B2859000E20A24 /* OpenItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenItemTableViewCell.xib; sourceTree = "<group>"; };
+		0237E17B26B2D61E00E20A24 /* OpenItemTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenItemTitleCell.swift; sourceTree = "<group>"; };
 		023CADDE26AE51150092EB89 /* KakaoMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023CADE126AE51150092EB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023CADE326AE51150092EB89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0237E16F26B24DF200E20A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		023CADD526AE51150092EB89 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +118,11 @@
 		023CADE026AE51150092EB89 /* KakaoMakers */ = {
 			isa = PBXGroup;
 			children = (
+				0237E16F26B24DF200E20A24 /* Model */,
 				026E40B226B115180075A570 /* Utilities */,
 				023CAE4226AE62330092EB89 /* View */,
-				023CAE3626AE5EE30092EB89 /* AlarmTopMenu */,
 				023CAE2026AE59600092EB89 /* HomeTopMenu */,
+				023CAE3626AE5EE30092EB89 /* AlarmTopMenu */,
 				026E40A826B0FCE20075A570 /* HomeTopCell */,
 				023CAE1226AE55CD0092EB89 /* StoryBoards */,
 				023CADE126AE51150092EB89 /* AppDelegate.swift */,
@@ -132,6 +152,7 @@
 		023CAE2026AE59600092EB89 /* HomeTopMenu */ = {
 			isa = PBXGroup;
 			children = (
+				0237E17026B24E1900E20A24 /* ItemData.swift */,
 				023CAE2626AE59B70092EB89 /* RecentReadTabViewController.swift */,
 				023CAE2926AE59BE0092EB89 /* HomeTabViewController.swift */,
 				023CAE2C26AE59C80092EB89 /* OpenTabViewController.swift */,
@@ -180,6 +201,11 @@
 				026E40C326B125CF0075A570 /* MenuBarTableViewCell.swift */,
 				026E40C626B126230075A570 /* MenuBarCollectionViewCell.swift */,
 				026E40C726B126230075A570 /* MenuBarCollectionViewCell.xib */,
+				0237E16626B2416200E20A24 /* AllItemTableViewCell.swift */,
+				0237E16726B2416200E20A24 /* AllItemTableViewCell.xib */,
+				0237E17B26B2D61E00E20A24 /* OpenItemTitleCell.swift */,
+				0237E17626B2859000E20A24 /* OpenItemTableViewCell.swift */,
+				0237E17726B2859000E20A24 /* OpenItemTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -261,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				023CAE4626AE624A0092EB89 /* DetailAlarmTableViewCell.xib in Resources */,
+				0237E17926B2859000E20A24 /* OpenItemTableViewCell.xib in Resources */,
 				026E40C926B126230075A570 /* MenuBarCollectionViewCell.xib in Resources */,
 				023CADEE26AE51160092EB89 /* LaunchScreen.storyboard in Resources */,
 				023CAE1026AE55BE0092EB89 /* Setting.storyboard in Resources */,
@@ -268,6 +295,7 @@
 				023CAE1926AE56640092EB89 /* Alarm.storyboard in Resources */,
 				023CAE1626AE56470092EB89 /* Home.storyboard in Resources */,
 				023CADE926AE51150092EB89 /* Main.storyboard in Resources */,
+				0237E16926B2416200E20A24 /* AllItemTableViewCell.xib in Resources */,
 				023CAE0926AE559C0092EB89 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +353,8 @@
 				023CADE626AE51150092EB89 /* ViewController.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,
+				0237E16826B2416200E20A24 /* AllItemTableViewCell.swift in Sources */,
+				0237E17C26B2D61E00E20A24 /* OpenItemTitleCell.swift in Sources */,
 				023CAE3C26AE5F380092EB89 /* NotiTabViewController.swift in Sources */,
 				026E40C426B125CF0075A570 /* MenuBarTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
@@ -332,8 +362,10 @@
 				023CAE4026AE5F4B0092EB89 /* AlarmDetailTabViewController.swift in Sources */,
 				023CAE2726AE59B70092EB89 /* RecentReadTabViewController.swift in Sources */,
 				026E40B426B1152F0075A570 /* Extensions.swift in Sources */,
+				0237E17826B2859000E20A24 /* OpenItemTableViewCell.swift in Sources */,
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,
+				0237E17126B24E1900E20A24 /* ItemData.swift in Sources */,
 				023CAE1D26AE58CA0092EB89 /* HomeViewController.swift in Sources */,
 				023CAE2A26AE59BE0092EB89 /* HomeTabViewController.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--View Controller-->
         <scene sceneID="SzT-Xg-fwe">
             <objects>
                 <viewController id="FfT-lz-Bq7" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="onv-Yv-dPw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="search" id="es7-YF-8hN"/>
+                    <tabBarItem key="tabBarItem" title="" image="search" id="es7-YF-8hN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00B-Od-Fer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -32,11 +32,17 @@ class MenuBarTableViewCell: UITableViewCell {
 extension MenuBarTableViewCell:
   UICollectionViewDataSource,
   UICollectionViewDelegate {
-  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  func collectionView(
+    _ collectionView: UICollectionView,
+    numberOfItemsInSection section: Int
+  ) -> Int {
     return menuList.count
   }
   
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  func collectionView(
+    _ collectionView: UICollectionView,
+    cellForItemAt indexPath: IndexPath
+  ) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuBarCollectionViewCell", for: indexPath) as! MenuBarCollectionViewCell
     let menu = menuList[indexPath.item]
     cell.menuTitleLabel.text = menu
@@ -48,7 +54,8 @@ extension MenuBarTableViewCell:
   }
 }
 
-extension MenuBarTableViewCell: UICollectionViewDelegateFlowLayout {
+extension MenuBarTableViewCell:
+  UICollectionViewDelegateFlowLayout {
   func collectionView(
     _ collectionView: UICollectionView,
     layout collectionViewLayout: UICollectionViewLayout,
