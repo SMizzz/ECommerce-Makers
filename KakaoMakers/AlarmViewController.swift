@@ -42,20 +42,32 @@ class AlarmViewController: TabmanViewController {
   }
 }
 
-extension AlarmViewController: PageboyViewControllerDataSource, TMBarDataSource {
-  func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
+extension AlarmViewController:
+  PageboyViewControllerDataSource,
+  TMBarDataSource {
+  func numberOfViewControllers(
+    in pageboyViewController: PageboyViewController
+  ) -> Int {
     return viewControllers.count
   }
   
-  func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
+  func viewController(
+    for pageboyViewController: PageboyViewController,
+    at index: PageboyViewController.PageIndex
+  ) -> UIViewController? {
     return viewControllers[index]
   }
   
-  func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
+  func defaultPage(
+    for pageboyViewController: PageboyViewController
+  ) -> PageboyViewController.Page? {
     return nil
   }
   
-  func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
+  func barItem(
+    for bar: TMBar,
+    at index: Int
+  ) -> TMBarItemable {
     let item = TMBarItem(title: "")
     switch index {
     case 0:

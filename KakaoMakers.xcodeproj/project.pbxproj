@@ -44,6 +44,8 @@
 		02B4E90D26B78DE90085802F /* LikeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90B26B78DE90085802F /* LikeItemCollectionViewCell.swift */; };
 		02B4E90E26B78DE90085802F /* LikeItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90C26B78DE90085802F /* LikeItemCollectionViewCell.xib */; };
 		02B4E91126B794E50085802F /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E91026B794E50085802F /* LikeTableViewCell.swift */; };
+		02B4E91826B7B1350085802F /* AlertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E91726B7B1350085802F /* AlertData.swift */; };
+		02B4E92226B7CE1E0085802F /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */; };
 		51D2F2128754D7E6527A8186 /* Pods_KakaoMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		02B4E90B26B78DE90085802F /* LikeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B4E90C26B78DE90085802F /* LikeItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		02B4E91026B794E50085802F /* LikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		02B4E91726B7B1350085802F /* AlertData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertData.swift; sourceTree = "<group>"; };
+		02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
 		7B1F3400F07EA134CF8364BA /* Pods-KakaoMakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMakers.debug.xcconfig"; path = "Target Support Files/Pods-KakaoMakers/Pods-KakaoMakers.debug.xcconfig"; sourceTree = "<group>"; };
 		DF870AFBDA3A835B56273CF6 /* Pods-KakaoMakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMakers.release.xcconfig"; path = "Target Support Files/Pods-KakaoMakers/Pods-KakaoMakers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,8 +182,9 @@
 		023CAE3626AE5EE30092EB89 /* AlarmTopMenu */ = {
 			isa = PBXGroup;
 			children = (
-				023CAE3B26AE5F380092EB89 /* NotiTabViewController.swift */,
+				02B4E91726B7B1350085802F /* AlertData.swift */,
 				023CAE3F26AE5F4B0092EB89 /* AlarmDetailTabViewController.swift */,
+				023CAE3B26AE5F380092EB89 /* NotiTabViewController.swift */,
 			);
 			path = AlarmTopMenu;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				026E40B626B117D90075A570 /* Home */,
+				02B4E91526B7AFFB0085802F /* Alarm */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,8 +216,6 @@
 		026E40B626B117D90075A570 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				023CAE4326AE624A0092EB89 /* DetailAlarmTableViewCell.swift */,
-				023CAE4426AE624A0092EB89 /* DetailAlarmTableViewCell.xib */,
 				026E40C326B125CF0075A570 /* MenuBarTableViewCell.swift */,
 				026E40C626B126230075A570 /* MenuBarCollectionViewCell.swift */,
 				026E40C726B126230075A570 /* MenuBarCollectionViewCell.xib */,
@@ -229,6 +233,16 @@
 				02B4E90C26B78DE90085802F /* LikeItemCollectionViewCell.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		02B4E91526B7AFFB0085802F /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				023CAE4326AE624A0092EB89 /* DetailAlarmTableViewCell.swift */,
+				023CAE4426AE624A0092EB89 /* DetailAlarmTableViewCell.xib */,
+				02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */,
+			);
+			path = Alarm;
 			sourceTree = "<group>";
 		};
 		1B2EE9FAB599A612A5F763B5 /* Pods */ = {
@@ -375,6 +389,7 @@
 				02B4E90D26B78DE90085802F /* LikeItemCollectionViewCell.swift in Sources */,
 				026E40C826B126230075A570 /* MenuBarCollectionViewCell.swift in Sources */,
 				02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */,
+				02B4E91826B7B1350085802F /* AlertData.swift in Sources */,
 				023CADE626AE51150092EB89 /* ViewController.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,
@@ -382,6 +397,7 @@
 				0237E17C26B2D61E00E20A24 /* OpenItemTitleCell.swift in Sources */,
 				023CAE3C26AE5F380092EB89 /* NotiTabViewController.swift in Sources */,
 				026E40C426B125CF0075A570 /* MenuBarTableViewCell.swift in Sources */,
+				02B4E92226B7CE1E0085802F /* NotiTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
 				02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */,
 				023CADE426AE51150092EB89 /* SceneDelegate.swift in Sources */,
