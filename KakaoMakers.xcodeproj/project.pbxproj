@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0212E83426B7198C000913C5 /* TalkAlertTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */; };
+		0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */; };
+		0231824C26B7FBFC00DAC0E9 /* NotiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0231824A26B7FBFC00DAC0E9 /* NotiTableViewCell.xib */; };
+		0231825A26B8001100DAC0E9 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231825926B8001100DAC0E9 /* MyViewController.swift */; };
+		0231825F26B8024500DAC0E9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231825E26B8024500DAC0E9 /* SettingViewController.swift */; };
+		0231826326B802ED00DAC0E9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231826226B802ED00DAC0E9 /* SettingTableViewCell.swift */; };
 		0237E16826B2416200E20A24 /* AllItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E16626B2416200E20A24 /* AllItemTableViewCell.swift */; };
 		0237E16926B2416200E20A24 /* AllItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0237E16726B2416200E20A24 /* AllItemTableViewCell.xib */; };
 		0237E17126B24E1900E20A24 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237E17026B24E1900E20A24 /* ItemData.swift */; };
@@ -45,13 +50,17 @@
 		02B4E90E26B78DE90085802F /* LikeItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90C26B78DE90085802F /* LikeItemCollectionViewCell.xib */; };
 		02B4E91126B794E50085802F /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E91026B794E50085802F /* LikeTableViewCell.swift */; };
 		02B4E91826B7B1350085802F /* AlertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E91726B7B1350085802F /* AlertData.swift */; };
-		02B4E92226B7CE1E0085802F /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */; };
 		51D2F2128754D7E6527A8186 /* Pods_KakaoMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTitleTableViewCell.swift; sourceTree = "<group>"; };
 		021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
+		0231824A26B7FBFC00DAC0E9 /* NotiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotiTableViewCell.xib; sourceTree = "<group>"; };
+		0231825926B8001100DAC0E9 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		0231825E26B8024500DAC0E9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0231826226B802ED00DAC0E9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		0237E16626B2416200E20A24 /* AllItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemTableViewCell.swift; sourceTree = "<group>"; };
 		0237E16726B2416200E20A24 /* AllItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllItemTableViewCell.xib; sourceTree = "<group>"; };
 		0237E17026B24E1900E20A24 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
@@ -91,7 +100,6 @@
 		02B4E90C26B78DE90085802F /* LikeItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		02B4E91026B794E50085802F /* LikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
 		02B4E91726B7B1350085802F /* AlertData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertData.swift; sourceTree = "<group>"; };
-		02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
 		7B1F3400F07EA134CF8364BA /* Pods-KakaoMakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMakers.debug.xcconfig"; path = "Target Support Files/Pods-KakaoMakers/Pods-KakaoMakers.debug.xcconfig"; sourceTree = "<group>"; };
 		DF870AFBDA3A835B56273CF6 /* Pods-KakaoMakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMakers.release.xcconfig"; path = "Target Support Files/Pods-KakaoMakers/Pods-KakaoMakers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0231825726B7FF0800DAC0E9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0231826226B802ED00DAC0E9 /* SettingTableViewCell.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		0237E16F26B24DF200E20A24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,8 @@
 				023CAE1C26AE58CA0092EB89 /* HomeViewController.swift */,
 				023CAE3226AE5E750092EB89 /* AlarmViewController.swift */,
 				023CADE526AE51150092EB89 /* ViewController.swift */,
+				0231825926B8001100DAC0E9 /* MyViewController.swift */,
+				0231825E26B8024500DAC0E9 /* SettingViewController.swift */,
 				023CADEA26AE51160092EB89 /* Assets.xcassets */,
 				023CADEC26AE51160092EB89 /* LaunchScreen.storyboard */,
 				023CADEF26AE51160092EB89 /* Info.plist */,
@@ -194,6 +212,7 @@
 			children = (
 				026E40B626B117D90075A570 /* Home */,
 				02B4E91526B7AFFB0085802F /* Alarm */,
+				0231825726B7FF0800DAC0E9 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,7 +259,8 @@
 			children = (
 				023CAE4326AE624A0092EB89 /* DetailAlarmTableViewCell.swift */,
 				023CAE4426AE624A0092EB89 /* DetailAlarmTableViewCell.xib */,
-				02B4E92126B7CE1E0085802F /* NotiTableViewCell.swift */,
+				0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */,
+				0231824A26B7FBFC00DAC0E9 /* NotiTableViewCell.xib */,
 			);
 			path = Alarm;
 			sourceTree = "<group>";
@@ -322,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				023CAE4626AE624A0092EB89 /* DetailAlarmTableViewCell.xib in Resources */,
+				0231824C26B7FBFC00DAC0E9 /* NotiTableViewCell.xib in Resources */,
 				0237E17926B2859000E20A24 /* OpenItemTableViewCell.xib in Resources */,
 				026E40C926B126230075A570 /* MenuBarCollectionViewCell.xib in Resources */,
 				023CADEE26AE51160092EB89 /* LaunchScreen.storyboard in Resources */,
@@ -390,6 +411,7 @@
 				026E40C826B126230075A570 /* MenuBarCollectionViewCell.swift in Sources */,
 				02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */,
 				02B4E91826B7B1350085802F /* AlertData.swift in Sources */,
+				0231826326B802ED00DAC0E9 /* SettingTableViewCell.swift in Sources */,
 				023CADE626AE51150092EB89 /* ViewController.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,
@@ -397,7 +419,7 @@
 				0237E17C26B2D61E00E20A24 /* OpenItemTitleCell.swift in Sources */,
 				023CAE3C26AE5F380092EB89 /* NotiTabViewController.swift in Sources */,
 				026E40C426B125CF0075A570 /* MenuBarTableViewCell.swift in Sources */,
-				02B4E92226B7CE1E0085802F /* NotiTableViewCell.swift in Sources */,
+				0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
 				02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */,
 				023CADE426AE51150092EB89 /* SceneDelegate.swift in Sources */,
@@ -405,10 +427,12 @@
 				0212E83426B7198C000913C5 /* TalkAlertTitleTableViewCell.swift in Sources */,
 				023CAE2726AE59B70092EB89 /* RecentReadTabViewController.swift in Sources */,
 				026E40B426B1152F0075A570 /* Extensions.swift in Sources */,
+				0231825F26B8024500DAC0E9 /* SettingViewController.swift in Sources */,
 				0237E17826B2859000E20A24 /* OpenItemTableViewCell.swift in Sources */,
 				02B4E91126B794E50085802F /* LikeTableViewCell.swift in Sources */,
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,
+				0231825A26B8001100DAC0E9 /* MyViewController.swift in Sources */,
 				0237E17126B24E1900E20A24 /* ItemData.swift in Sources */,
 				023CAE1D26AE58CA0092EB89 /* HomeViewController.swift in Sources */,
 				023CAE2A26AE59BE0092EB89 /* HomeTabViewController.swift in Sources */,

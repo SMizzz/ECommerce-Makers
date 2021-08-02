@@ -49,42 +49,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kuY-yD-i3c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotiTableViewCell" editingAccessoryType="detailButton" rowHeight="85" id="ZK7-KM-fcs" customClass="NotiTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="85"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZK7-KM-fcs" id="V7O-I4-rRQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.07.29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-cg-OtN">
-                                                    <rect key="frame" x="25" y="48" width="364" height="17"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[안내] 카카오커머스 합병에 따른 개인정보 이전 안내" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOg-bM-7hQ">
-                                                    <rect key="frame" x="25" y="20" width="364" height="18"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="15"/>
-                                                    <color key="textColor" red="0.20785340669999999" green="0.20778468250000001" blue="0.21196410060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="njg-cg-OtN" secondAttribute="trailing" constant="5" id="PND-Lj-dxq"/>
-                                                <constraint firstItem="njg-cg-OtN" firstAttribute="top" secondItem="UOg-bM-7hQ" secondAttribute="bottom" constant="10" id="Uvb-9V-CQ9"/>
-                                                <constraint firstItem="njg-cg-OtN" firstAttribute="leading" secondItem="V7O-I4-rRQ" secondAttribute="leadingMargin" constant="5" id="chs-s2-GEw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="UOg-bM-7hQ" secondAttribute="trailing" constant="5" id="duY-48-J19"/>
-                                                <constraint firstItem="UOg-bM-7hQ" firstAttribute="top" secondItem="V7O-I4-rRQ" secondAttribute="topMargin" constant="9" id="izR-Rg-Q1i"/>
-                                                <constraint firstItem="UOg-bM-7hQ" firstAttribute="leading" secondItem="V7O-I4-rRQ" secondAttribute="leadingMargin" constant="5" id="w5N-6h-2VU"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="dateLabel" destination="njg-cg-OtN" id="uFi-ib-pUg"/>
-                                            <outlet property="titleLabel" destination="UOg-bM-7hQ" id="pJC-kJ-Vjs"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zkA-rZ-nzt"/>
@@ -97,7 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="kuY-yD-i3c" id="dck-tS-k55"/>
+                        <outlet property="notiTableView" destination="kuY-yD-i3c" id="iRp-Jg-0np"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Av-ba-Xoc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
