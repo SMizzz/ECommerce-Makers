@@ -77,7 +77,7 @@ extension HomeTabViewController:
       cell.ordererCountLabel.text = "\(item.orderer)명이 주문했어요"
       cell.loveButton.setTitle("  \(item.lover) 명", for: .normal)
       return cell
-    }
+    } 
     return UITableViewCell()
   }
   

@@ -21,3 +21,16 @@ struct OpenItem {
   let content: String
   let waiter: Int
 }
+
+struct TalkAlert {
+  let imageName: String
+  let title: String
+  let waiter: Int
+}
+
+struct Like {
+  let imageName: String
+  let title: String
+  let price: Int
+  let dDayLabel: String
+}
