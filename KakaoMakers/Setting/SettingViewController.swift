@@ -23,6 +23,11 @@ class SettingViewController: UIViewController {
     tableView.rowHeight = UITableView.automaticDimension
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    tabBarController?.tabBar.isHidden = false
+  }
+  
   @IBAction func backBtnTap(_ sender: Any) {
     self.navigationController?.popViewController(animated: true)
   }
@@ -158,6 +163,14 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         let settingDetailVC = settingDetailSB.instantiateViewController(withIdentifier: "SettingDetailVC")
         navigationController?.pushViewController(settingDetailVC, animated: true)
       }
+      
+    case 1:
+      if indexPath.row == 0 {
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let CashReceiptVC = settingDetailSB.instantiateViewController(withIdentifier: "CashReceiptVC")
+        navigationController?.pushViewController(CashReceiptVC, animated: true)
+      }
+      
     case 3:
       if indexPath.row == 0 {
         print("로그아웃 하시겠습니까")

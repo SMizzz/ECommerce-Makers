@@ -47,6 +47,7 @@
 		027D369D26BA58FC00E50BE8 /* PushAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D369C26BA58FC00E50BE8 /* PushAdViewController.swift */; };
 		027D36A126BA59FF00E50BE8 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A026BA59FF00E50BE8 /* SettingData.swift */; };
 		027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */; };
+		027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */; };
 		02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */; };
 		02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */; };
 		02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */; };
@@ -101,6 +102,7 @@
 		027D369C26BA58FC00E50BE8 /* PushAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAdViewController.swift; sourceTree = "<group>"; };
 		027D36A026BA59FF00E50BE8 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
 		027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashReceiptViewController.swift; sourceTree = "<group>"; };
 		02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTableViewCell.swift; sourceTree = "<group>"; };
 		02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkAlertCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			children = (
 				027D36A026BA59FF00E50BE8 /* SettingData.swift */,
 				027D369C26BA58FC00E50BE8 /* PushAdViewController.swift */,
+				027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */,
 			);
 			path = SettingDetail;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				026E40C826B126230075A570 /* MenuBarCollectionViewCell.swift in Sources */,
 				02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */,
 				02B4E91826B7B1350085802F /* AlertData.swift in Sources */,
+				027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */,
 				0231826326B802ED00DAC0E9 /* SettingTableViewCell.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,

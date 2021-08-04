@@ -35,6 +35,7 @@ class PushAdViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureTableView()
+    tabBarController?.tabBar.isHidden = true
   }
   
   private func configureTableView() {
