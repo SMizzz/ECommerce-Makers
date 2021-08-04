@@ -98,6 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="uRF-2s-7nZ">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="C2h-fp-tfW">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtnTap:" destination="aYB-jZ-4wD" id="Tmp-Ub-WUn"/>
                             </connections>

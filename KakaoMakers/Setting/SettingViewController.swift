@@ -175,10 +175,18 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         navigationController?.pushViewController(refundManagementVC, animated: true)
       }
       
+    case 2:
+      if indexPath.row == 1 {
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let openSourceLicenseVC = settingDetailSB.instantiateViewController(withIdentifier: "OpenSourceLicenseVC")
+        navigationController?.pushViewController(openSourceLicenseVC, animated: true)
+      }
+      
     case 3:
       if indexPath.row == 0 {
         print("로그아웃 하시겠습니까")
       }
+      
     default:
       0
     }

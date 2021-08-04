@@ -572,7 +572,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tS-d8-9ru">
-                                <rect key="frame" x="0.0" y="418" width="414" height="388"/>
+                                <rect key="frame" x="0.0" y="418.5" width="414" height="388"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="388" id="6zC-Di-1pe"/>
@@ -619,7 +619,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1GN-bO-XF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2081.159420289855" y="600"/>
+            <point key="canvasLocation" x="-2081" y="553"/>
+        </scene>
+        <!--오픈소스 라이선스-->
+        <scene sceneID="dtU-V5-0xh">
+            <objects>
+                <viewController storyboardIdentifier="OpenSourceLicenseVC" id="IUs-3W-Vnb" customClass="OpenSourceLicenseViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zhO-Pq-VbA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h33-eK-QwO">
+                                <rect key="frame" x="5" y="88" width="404" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1WD-s3-BGU"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1WD-s3-BGU" firstAttribute="trailing" secondItem="h33-eK-QwO" secondAttribute="trailing" constant="5" id="Qk8-wq-jfv"/>
+                            <constraint firstItem="1WD-s3-BGU" firstAttribute="bottom" secondItem="h33-eK-QwO" secondAttribute="bottom" constant="5" id="SQr-oI-khe"/>
+                            <constraint firstItem="h33-eK-QwO" firstAttribute="leading" secondItem="1WD-s3-BGU" secondAttribute="leading" constant="5" id="ZYj-Vu-DSQ"/>
+                            <constraint firstItem="h33-eK-QwO" firstAttribute="top" secondItem="1WD-s3-BGU" secondAttribute="top" id="lT6-ZO-U0O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="오픈소스 라이선스" id="kCl-OF-faY">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Item" image="arrow.left" catalog="system" id="3ze-Mv-Duj">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="backBtnTap:" destination="IUs-3W-Vnb" id="UTf-4B-sT3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="home" id="p1o-PN-nfe">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="h33-eK-QwO" id="UFV-ys-RV2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vf4-MM-13M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2081" y="1274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Cm-WS-UIy">
@@ -673,7 +720,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbX-Zt-AQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2991" y="601"/>
+            <point key="canvasLocation" x="-2991" y="552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EG4-HS-pFY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="goy-ws-pvu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zf0-4p-LTY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IUs-3W-Vnb" kind="relationship" relationship="rootViewController" id="zgb-XW-L00"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ex-5m-vXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2991" y="1274"/>
         </scene>
     </scenes>
     <resources>
