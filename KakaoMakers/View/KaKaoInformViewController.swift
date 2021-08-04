@@ -7,7 +7,7 @@
 
 import UIKit
 
-class KaKaoInformTestViewController: UIViewController {
+class KaKaoInformViewController: UIViewController {
   
   @IBOutlet weak var InformDetailView: UIView!
   @IBOutlet weak var customerInquiryButton: UIButton!
