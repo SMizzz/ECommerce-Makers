@@ -167,8 +167,12 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     case 1:
       if indexPath.row == 0 {
         let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
-        let CashReceiptVC = settingDetailSB.instantiateViewController(withIdentifier: "CashReceiptVC")
-        navigationController?.pushViewController(CashReceiptVC, animated: true)
+        let cashReceiptVC = settingDetailSB.instantiateViewController(withIdentifier: "CashReceiptVC")
+        navigationController?.pushViewController(cashReceiptVC, animated: true)
+      } else if indexPath.row == 1 {
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let refundManagementVC = settingDetailSB.instantiateViewController(withIdentifier: "RefundManagementVC")
+        navigationController?.pushViewController(refundManagementVC, animated: true)
       }
       
     case 3:

@@ -48,6 +48,9 @@
 		027D36A126BA59FF00E50BE8 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A026BA59FF00E50BE8 /* SettingData.swift */; };
 		027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */; };
 		027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */; };
+		027D36BB26BA831600E50BE8 /* RefundManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */; };
+		027D36C326BA870400E50BE8 /* KaKaoInformTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36C126BA870400E50BE8 /* KaKaoInformTestViewController.swift */; };
+		027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */; };
 		02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */; };
 		02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */; };
 		02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */; };
@@ -103,6 +106,9 @@
 		027D36A026BA59FF00E50BE8 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
 		027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashReceiptViewController.swift; sourceTree = "<group>"; };
+		027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefundManagementViewController.swift; sourceTree = "<group>"; };
+		027D36C126BA870400E50BE8 /* KaKaoInformTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoInformTestViewController.swift; sourceTree = "<group>"; };
+		027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaKaoInformTestViewController.xib; sourceTree = "<group>"; };
 		02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTableViewCell.swift; sourceTree = "<group>"; };
 		02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkAlertCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -134,13 +140,6 @@
 			path = SettingCell;
 			sourceTree = "<group>";
 		};
-		0237E16F26B24DF200E20A24 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		023CADD526AE51150092EB89 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +163,6 @@
 			children = (
 				023CADE126AE51150092EB89 /* AppDelegate.swift */,
 				023CADE326AE51150092EB89 /* SceneDelegate.swift */,
-				0237E16F26B24DF200E20A24 /* Model */,
 				026E40B226B115180075A570 /* Utilities */,
 				023CAE1226AE55CD0092EB89 /* StoryBoards */,
 				023CAE4226AE62330092EB89 /* View */,
@@ -219,10 +217,9 @@
 		023CAE4226AE62330092EB89 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				026E40B626B117D90075A570 /* HomeCell */,
-				02B4E91526B7AFFB0085802F /* AlarmCell */,
-				0231825726B7FF0800DAC0E9 /* SettingCell */,
-				027D368B26BA571D00E50BE8 /* SettingDetailCell */,
+				027D36AB26BA7D8300E50BE8 /* Cell */,
+				027D36C126BA870400E50BE8 /* KaKaoInformTestViewController.swift */,
+				027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,8 +310,20 @@
 				027D36A026BA59FF00E50BE8 /* SettingData.swift */,
 				027D369C26BA58FC00E50BE8 /* PushAdViewController.swift */,
 				027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */,
+				027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */,
 			);
 			path = SettingDetail;
+			sourceTree = "<group>";
+		};
+		027D36AB26BA7D8300E50BE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				026E40B626B117D90075A570 /* HomeCell */,
+				02B4E91526B7AFFB0085802F /* AlarmCell */,
+				0231825726B7FF0800DAC0E9 /* SettingCell */,
+				027D368B26BA571D00E50BE8 /* SettingDetailCell */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		02B4E91526B7AFFB0085802F /* AlarmCell */ = {
@@ -414,6 +423,7 @@
 				023CAE1026AE55BE0092EB89 /* My.storyboard in Resources */,
 				023CADEB26AE51160092EB89 /* Assets.xcassets in Resources */,
 				023CAE1926AE56640092EB89 /* Alarm.storyboard in Resources */,
+				027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */,
 				02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */,
 				023CAE1626AE56470092EB89 /* Home.storyboard in Resources */,
 				02B4E90E26B78DE90085802F /* LikeItemCollectionViewCell.xib in Resources */,
@@ -486,7 +496,9 @@
 				026E40C426B125CF0075A570 /* MenuBarTableViewCell.swift in Sources */,
 				0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
+				027D36C326BA870400E50BE8 /* KaKaoInformTestViewController.swift in Sources */,
 				027D369D26BA58FC00E50BE8 /* PushAdViewController.swift in Sources */,
+				027D36BB26BA831600E50BE8 /* RefundManagementViewController.swift in Sources */,
 				02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */,
 				023CADE426AE51150092EB89 /* SceneDelegate.swift in Sources */,
 				027D369026BA574900E50BE8 /* PushAdTableViewCell.swift in Sources */,
