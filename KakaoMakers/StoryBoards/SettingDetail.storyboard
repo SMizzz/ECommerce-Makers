@@ -630,7 +630,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h33-eK-QwO">
-                                <rect key="frame" x="5" y="88" width="404" height="769"/>
+                                <rect key="frame" x="5" y="88" width="404" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -642,7 +642,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1WD-s3-BGU" firstAttribute="trailing" secondItem="h33-eK-QwO" secondAttribute="trailing" constant="5" id="Qk8-wq-jfv"/>
-                            <constraint firstItem="1WD-s3-BGU" firstAttribute="bottom" secondItem="h33-eK-QwO" secondAttribute="bottom" constant="5" id="SQr-oI-khe"/>
+                            <constraint firstItem="1WD-s3-BGU" firstAttribute="bottom" secondItem="h33-eK-QwO" secondAttribute="bottom" id="SQr-oI-khe"/>
                             <constraint firstItem="h33-eK-QwO" firstAttribute="leading" secondItem="1WD-s3-BGU" secondAttribute="leading" constant="5" id="ZYj-Vu-DSQ"/>
                             <constraint firstItem="h33-eK-QwO" firstAttribute="top" secondItem="1WD-s3-BGU" secondAttribute="top" id="lT6-ZO-U0O"/>
                         </constraints>
@@ -667,6 +667,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vf4-MM-13M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2081" y="1274"/>
+        </scene>
+        <!--개인정보처리방침-->
+        <scene sceneID="hGz-S0-tpw">
+            <objects>
+                <viewController storyboardIdentifier="PersonInfromProcessingPolicyVC" id="LtR-xP-qdw" customClass="PersonalInformProcessingPolicyViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzH-7x-VmH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-dh-CGf">
+                                <rect key="frame" x="5" y="44" width="404" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-LF-UYb">
+                                <rect key="frame" x="359" y="54" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Gle-Sv-w01"/>
+                                    <constraint firstAttribute="width" constant="30" id="odQ-PC-ZBv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="delete"/>
+                                <connections>
+                                    <action selector="deleteBtnTap:" destination="LtR-xP-qdw" eventType="touchUpInside" id="2nh-yv-Kyg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d85-eX-gHd"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aaL-dh-CGf" firstAttribute="bottom" secondItem="d85-eX-gHd" secondAttribute="bottom" id="Ajv-jb-2oy"/>
+                            <constraint firstItem="d85-eX-gHd" firstAttribute="trailing" secondItem="4H0-LF-UYb" secondAttribute="trailing" constant="25" id="DE1-7U-H88"/>
+                            <constraint firstItem="aaL-dh-CGf" firstAttribute="leading" secondItem="d85-eX-gHd" secondAttribute="leading" constant="5" id="UUi-5x-061"/>
+                            <constraint firstItem="aaL-dh-CGf" firstAttribute="top" secondItem="d85-eX-gHd" secondAttribute="top" id="hTG-kU-seJ"/>
+                            <constraint firstItem="d85-eX-gHd" firstAttribute="trailing" secondItem="aaL-dh-CGf" secondAttribute="trailing" constant="5" id="nf7-cW-gjE"/>
+                            <constraint firstItem="4H0-LF-UYb" firstAttribute="top" secondItem="d85-eX-gHd" secondAttribute="top" constant="10" id="tqp-v8-zH2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="개인정보처리방침" id="IMY-Ea-qHn">
+                        <barButtonItem key="leftBarButtonItem" id="XN6-FP-a5H"/>
+                        <barButtonItem key="rightBarButtonItem" image="delete" id="t4P-ML-Dvz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="aaL-dh-CGf" id="3xE-Be-nzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJZ-oF-qv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2081.159420289855" y="2008.9285714285713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Cm-WS-UIy">
@@ -740,11 +791,29 @@
             </objects>
             <point key="canvasLocation" x="-2991" y="1274"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J0W-vC-WL7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GIS-ZJ-5me" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mww-lv-8SX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LtR-xP-qdw" kind="relationship" relationship="rootViewController" id="EEX-4B-I1V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBk-Qj-gB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2991.304347826087" y="2008.9285714285713"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="bestFamilyFriendlyLogo" width="132" height="37.5"/>
         <image name="cashKaKaoCommerceLogo_down" width="155" height="15"/>
+        <image name="delete" width="12.5" height="12.5"/>
         <image name="home" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

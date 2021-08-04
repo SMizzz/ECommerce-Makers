@@ -52,6 +52,7 @@
 		027D36C326BA870400E50BE8 /* KaKaoInformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */; };
 		027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */; };
 		027D36F826BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */; };
+		027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */; };
 		02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */; };
 		02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */; };
 		02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */; };
@@ -111,6 +112,7 @@
 		027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoInformViewController.swift; sourceTree = "<group>"; };
 		027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaKaoInformTestViewController.xib; sourceTree = "<group>"; };
 		027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceLicenseViewController.swift; sourceTree = "<group>"; };
+		027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformProcessingPolicyViewController.swift; sourceTree = "<group>"; };
 		02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTableViewCell.swift; sourceTree = "<group>"; };
 		02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkAlertCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */,
 				027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */,
 				027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */,
+				027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */,
 			);
 			path = SettingDetail;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				026E40B426B1152F0075A570 /* Extensions.swift in Sources */,
 				0237E17826B2859000E20A24 /* OpenItemTableViewCell.swift in Sources */,
 				02B4E91126B794E50085802F /* LikeTableViewCell.swift in Sources */,
+				027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */,
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,
 				027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */,

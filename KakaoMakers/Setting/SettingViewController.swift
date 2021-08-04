@@ -180,7 +180,13 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
         let openSourceLicenseVC = settingDetailSB.instantiateViewController(withIdentifier: "OpenSourceLicenseVC")
         navigationController?.pushViewController(openSourceLicenseVC, animated: true)
+      } else if indexPath.row == 2 {
+        
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let personInfromProcessingPolicyVC = settingDetailSB.instantiateViewController(withIdentifier: "PersonInfromProcessingPolicyVC")
+        navigationController?.pushViewController(personInfromProcessingPolicyVC, animated: true)
       }
+      
       
     case 3:
       if indexPath.row == 0 {
