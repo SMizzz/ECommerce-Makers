@@ -22,6 +22,10 @@ class SettingViewController: UIViewController {
     tableView.dataSource = self
     tableView.rowHeight = UITableView.automaticDimension
   }
+  
+  @IBAction func backBtnTap(_ sender: Any) {
+    self.navigationController?.popViewController(animated: true)
+  }
 }
 
 extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
@@ -70,7 +74,6 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
       return informCell
       
     case 2:
-    
       if indexPath.row == 0 {
         detailCell.textLabel?.text = appInfo[0]
         detailCell.detailTextLabel?.text = "최신버전입니다."
@@ -149,6 +152,12 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch indexPath.section {
+    case 0:
+      if indexPath.row == 1 {
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let settingDetailVC = settingDetailSB.instantiateViewController(withIdentifier: "SettingDetailVC")
+        navigationController?.pushViewController(settingDetailVC, animated: true)
+      }
     case 3:
       if indexPath.row == 0 {
         print("로그아웃 하시겠습니까")

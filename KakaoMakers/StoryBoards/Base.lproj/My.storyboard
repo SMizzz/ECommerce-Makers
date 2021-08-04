@@ -97,7 +97,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="uRF-2s-7nZ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="C2h-fp-tfW"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="C2h-fp-tfW">
+                            <connections>
+                                <action selector="backBtnTap:" destination="aYB-jZ-4wD" id="Tmp-Ub-WUn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rno-PN-ffx" id="hqH-IT-c5g"/>
