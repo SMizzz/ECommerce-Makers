@@ -13,7 +13,7 @@ class SettingViewController: UIViewController {
   
   var personalInfo = ["휴대폰 번호", "알림/광고 동의 관리"]
   var paymentInfo = ["현금영수증 정보 관리", "환불관리"]
-  var appInfo = ["버전정보", "오픈소스 라이언스", "개인정보 처리방침", "도움말 / 고객센터", "친구에게 공유하기"]
+  var appInfo = ["버전정보", "오픈소스 라이언스", "개인정보 처리방침", "도움말/문의", "친구에게 공유하기"]
   var authInfo = ["로그아웃", "카카오 쇼핑 안내"]
   
   override func viewDidLoad() {
@@ -25,6 +25,7 @@ class SettingViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
+    navigationController?.navigationBar.isHidden = false
     tabBarController?.tabBar.isHidden = false
   }
   
@@ -181,10 +182,13 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         let openSourceLicenseVC = settingDetailSB.instantiateViewController(withIdentifier: "OpenSourceLicenseVC")
         navigationController?.pushViewController(openSourceLicenseVC, animated: true)
       } else if indexPath.row == 2 {
-        
         let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
         let personInfromProcessingPolicyVC = settingDetailSB.instantiateViewController(withIdentifier: "PersonInfromProcessingPolicyVC")
         navigationController?.pushViewController(personInfromProcessingPolicyVC, animated: true)
+      } else if indexPath.row == 3 {
+        let settingDetailSB = UIStoryboard(name: "SettingDetail", bundle: nil)
+        let helpInquiryVC = settingDetailSB.instantiateViewController(withIdentifier: "HelpInquiryVC")
+        navigationController?.pushViewController(helpInquiryVC, animated: true)
       }
       
       

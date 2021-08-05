@@ -21,8 +21,13 @@ class RefundManagementViewController: UIViewController {
     super.viewDidLoad()
     addKakaoInformView(vc: self)
     configureButton()
+    navigationController?.navigationBar.barTintColor = .white
     informVC.InformDetailView.isHidden = true
     tabBarController?.tabBar.isHidden = true
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    navigationController?.navigationBar.isHidden = false
   }
   
   func addKakaoInformView(vc: UIViewController) {

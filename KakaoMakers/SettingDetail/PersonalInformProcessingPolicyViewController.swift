@@ -14,6 +14,7 @@ class PersonalInformProcessingPolicyViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationController?.navigationBar.barTintColor = .white
     navigationController?.navigationBar.isHidden = true
     tabBarController?.tabBar.isHidden = true
     loadWebPage("https://buy.kakao.com/shopping-front/user/privacy-policy?channel=MAKERS")

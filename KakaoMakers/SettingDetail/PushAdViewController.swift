@@ -35,7 +35,12 @@ class PushAdViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureTableView()
+    navigationController?.navigationBar.barTintColor = .white
     tabBarController?.tabBar.isHidden = true
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    navigationController?.navigationBar.isHidden = false
   }
   
   private func configureTableView() {

@@ -11,10 +11,16 @@ import WebKit
 class OpenSourceLicenseViewController: UIViewController {
   
   @IBOutlet weak var webView: WKWebView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationController?.navigationBar.barTintColor = .white
     tabBarController?.tabBar.isHidden = true
     loadWebPage("https://www.google.com")
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    navigationController?.navigationBar.isHidden = false
   }
   
   private func loadWebPage(_ url: String) {

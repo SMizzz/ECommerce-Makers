@@ -15,8 +15,13 @@ class CashReceiptViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationController?.navigationBar.barTintColor = .white
     tabBarController?.tabBar.isHidden = true
     kakaoCommerceInformView.isHidden = true
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    navigationController?.navigationBar.isHidden = false
   }
   
   @IBAction func backBtnTap(_ sender: Any) {

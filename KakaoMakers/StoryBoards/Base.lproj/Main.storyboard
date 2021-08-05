@@ -17,10 +17,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Yu6-8z-X8l" kind="relationship" relationship="viewControllers" id="i5r-d5-NHM"/>
-                        <segue destination="xBl-Eo-iVl" kind="relationship" relationship="viewControllers" id="9FN-1l-c1p"/>
                         <segue destination="4rh-PE-cly" kind="relationship" relationship="viewControllers" id="Gxu-tU-9wK"/>
                         <segue destination="9KX-VY-x27" kind="relationship" relationship="viewControllers" id="66O-Hu-hi6"/>
+                        <segue destination="xBl-Eo-iVl" kind="relationship" relationship="viewControllers" id="9FN-1l-c1p"/>
+                        <segue destination="Yu6-8z-X8l" kind="relationship" relationship="viewControllers" id="i5r-d5-NHM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAO-yz-J2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
