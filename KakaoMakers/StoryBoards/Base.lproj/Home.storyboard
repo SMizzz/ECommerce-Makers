@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GN0-Of-OxY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GN0-Of-OxY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -73,7 +73,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuBarTableViewCell" rowHeight="60" id="M5T-CC-KEp" customClass="MenuBarTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M5T-CC-KEp" id="awP-0r-ro5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -104,7 +104,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="530" id="9n9-1i-bMD" customClass="AllItemTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="530"/>
+                                        <rect key="frame" x="0.0" y="84.5" width="414" height="530"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9n9-1i-bMD" id="5ir-QR-PIi">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="530"/>
@@ -145,7 +145,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OpenItemTitleCell" rowHeight="161" id="ic7-bl-7gt" customClass="OpenItemTitleCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="161"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ic7-bl-7gt" id="azL-fT-Upp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
@@ -182,7 +182,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OpenItemTableViewCell" rowHeight="371" id="uyp-zB-1Oo">
-                                        <rect key="frame" x="0.0" y="189" width="414" height="371"/>
+                                        <rect key="frame" x="0.0" y="185.5" width="414" height="371"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uyp-zB-1Oo" id="7Vq-zO-ihn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="371"/>
@@ -190,7 +190,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalkAlertTitleTableViewCell" rowHeight="103" id="FH9-xb-1ZY" customClass="TalkAlertTitleTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="560" width="414" height="103"/>
+                                        <rect key="frame" x="0.0" y="556.5" width="414" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FH9-xb-1ZY" id="As7-0u-3Pj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
@@ -215,7 +215,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalkAlertTableViewCell" rowHeight="140" id="L8e-Av-lfM" customClass="TalkAlertTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="663" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="659.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L8e-Av-lfM" id="Knx-Ym-0DH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
@@ -277,7 +277,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikeTableViewCell" rowHeight="354" id="8fG-ZE-uAm" customClass="LikeTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="354"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="354"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8fG-ZE-uAm" id="864-zP-bGe">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>

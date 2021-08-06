@@ -8,22 +8,55 @@
 import UIKit
 
 class OneOnOneInquiryViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  @IBOutlet weak var bottomView: UIView!
+  @IBOutlet weak var stackView: UIStackView!
+  @IBOutlet weak var bottomDetailView: UIView!
+  
+  let informVC = BottomInformViewController(
+    nibName: "BottomInformViewController",
+    bundle: nil)
+  
+  let informDetailVC = BottomDetailViewController(
+    nibName: "BottomDetailViewController",
+    bundle: nil)
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    informDetailVC.view.isHidden = true
+    addKakaoInformView(vc: self)
+    tabBarController?.tabBar.isHidden = true
+    configureButton()
+  }
+  
+  func addKakaoInformView(vc: UIViewController) {
+    bottomView.addSubview(informVC.view)
+    vc.addChild(informVC)
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    bottomDetailView.addSubview(informDetailVC.view)
+    vc.addChild(informDetailVC)
+  }
+  
+  private func configureButton() {
+    informVC.kakaoCommerceButton.addTarget(
+      self,
+      action: #selector(handleKakaoCommerceLogoButton),
+      for: .touchUpInside)
+  }
+  
+  @objc func handleKakaoCommerceLogoButton() {
+    if informVC.kakaoCommerceButton.tag == 0 {
+      informVC.kakaoCommerceButton.setImage(
+        UIImage(named: "cashKaKaoCommerceLogo_up"),
+        for: .normal)
+      informVC.kakaoCommerceButton.tag = 1
+      informDetailVC.view.isHidden = false
+    } else {
+      informVC.kakaoCommerceButton.setImage(
+        UIImage(named: "cashKaKaoCommerceLogo_down"),
+        for: .normal)
+      informVC.kakaoCommerceButton.tag = 0
+      informDetailVC.view.isHidden = true
     }
-    */
-
+  }
+  
 }

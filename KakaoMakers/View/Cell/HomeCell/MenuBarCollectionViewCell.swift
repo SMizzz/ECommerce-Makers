@@ -32,20 +32,6 @@ class MenuBarCollectionViewCell: UICollectionViewCell {
     }
   }
   
-//  func update(_ name:String?, status:Bool?){
-//    menuTitleLabel.text = name
-//    if let status = status,
-//       status {
-//      menuTitleLabel.textColor = .white
-//      menuTitleLabel.font = UIFont.boldSystemFont(ofSize: 15)
-//      menuTitleLabel.backgroundColor = .black
-//    } else {
-//      menuTitleLabel.textColor = .black
-//      menuTitleLabel.font = UIFont.systemFont(ofSize: 15)
-//      menuTitleLabel.backgroundColor = .white
-//    }
-//  }
-  
   func configureLabel() {
     menuTitleLabel.layer.cornerRadius = 18
     menuTitleLabel.layer.borderWidth = 1

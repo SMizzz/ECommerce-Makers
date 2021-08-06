@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThisWeekNewProductCollectionViewCell" id="gTV-IL-0wX" customClass="ThisWeekNewProductCollectionViewCell" customModule="KakaoMakers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="237" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="2xq-j3-n0o">
+                        <rect key="frame" x="0.0" y="0.0" width="237" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="I4D-oy-RXE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이 허니 버터피자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHj-cN-hKP">
+                        <rect key="frame" x="0.0" y="160" width="237" height="18"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158명 주문중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgi-Cn-iRz">
+                        <rect key="frame" x="0.0" y="180" width="237" height="18"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" red="0.84936124089999998" green="0.22715115550000001" blue="0.1663666368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dgi-Cn-iRz" secondAttribute="trailing" id="KH8-eY-5qe"/>
+                <constraint firstItem="2xq-j3-n0o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TG9-QC-V2i"/>
+                <constraint firstItem="2xq-j3-n0o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aiE-r2-116"/>
+                <constraint firstItem="nHj-cN-hKP" firstAttribute="top" secondItem="2xq-j3-n0o" secondAttribute="bottom" constant="10" id="bxz-Vs-WF0"/>
+                <constraint firstItem="dgi-Cn-iRz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cKy-qg-NKD"/>
+                <constraint firstItem="dgi-Cn-iRz" firstAttribute="top" secondItem="nHj-cN-hKP" secondAttribute="bottom" constant="2" id="gOq-Is-5TU"/>
+                <constraint firstItem="nHj-cN-hKP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rDl-B4-qNj"/>
+                <constraint firstAttribute="trailing" secondItem="2xq-j3-n0o" secondAttribute="trailing" id="wwB-So-ej8"/>
+                <constraint firstAttribute="trailing" secondItem="nHj-cN-hKP" secondAttribute="trailing" id="xdd-LO-Uhf"/>
+            </constraints>
+            <size key="customSize" width="237" height="218"/>
+            <connections>
+                <outlet property="orderCountLabel" destination="dgi-Cn-iRz" id="4iM-HV-c9a"/>
+                <outlet property="productImageView" destination="2xq-j3-n0o" id="cao-dh-tdb"/>
+                <outlet property="productTitle" destination="nHj-cN-hKP" id="B8c-uh-RVd"/>
+            </connections>
+            <point key="canvasLocation" x="273.1884057971015" y="180.13392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pizza" width="369" height="275"/>
+    </resources>
+</document>

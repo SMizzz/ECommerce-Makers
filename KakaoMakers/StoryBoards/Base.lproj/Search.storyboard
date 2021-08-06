@@ -1,32 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FfT-lz-Bq7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="in3-Mo-SBr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--검색-->
         <scene sceneID="SzT-Xg-fwe">
             <objects>
-                <viewController id="FfT-lz-Bq7" sceneMemberID="viewController">
+                <viewController id="FfT-lz-Bq7" customClass="SearchViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GC9-up-3nS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="어떤 제품을 찾으시나요?" translatesAutoresizingMaskIntoConstraints="NO" id="SPv-WE-fge">
+                                <rect key="frame" x="10" y="140" width="394" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VW2-IO-YWh">
+                                <rect key="frame" x="0.0" y="191" width="414" height="622"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThisWeekNewProductTableViewCell" rowHeight="410" id="Y6L-QX-sKP" customClass="ThisWeekNewProductTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="410"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y6L-QX-sKP" id="Wk3-ln-2J7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="410"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-iQ-2Oj">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="410"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="11w-7j-g34">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xpa-iQ-2Oj" firstAttribute="top" secondItem="Wk3-ln-2J7" secondAttribute="top" id="XGR-1p-2TQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="xpa-iQ-2Oj" secondAttribute="trailing" constant="15" id="avj-Qb-Wms"/>
+                                                <constraint firstItem="xpa-iQ-2Oj" firstAttribute="leading" secondItem="Wk3-ln-2J7" secondAttribute="leading" constant="15" id="nb8-1e-L1V"/>
+                                                <constraint firstAttribute="bottom" secondItem="xpa-iQ-2Oj" secondAttribute="bottom" id="yGR-we-1tt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="xpa-iQ-2Oj" id="E7c-fr-EZi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RefreshTableViewCell" rowHeight="80" id="pPV-V9-EuG" customClass="RefreshTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="434.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pPV-V9-EuG" id="Yrl-Tp-crD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HK-o4-BKO">
+                                                    <rect key="frame" x="20" y="17.5" width="374" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="oRL-PG-otq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="tintColor" red="0.46727517540000002" green="0.43900199379999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title=" 클릭해서 더보기">
+                                                        <color key="titleColor" red="0.46727517541902752" green="0.43900199383908067" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <imageReference key="image" image="goforward" catalog="system" symbolScale="default"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="refreshBtnTap:" destination="pPV-V9-EuG" eventType="touchUpInside" id="oFN-vr-KTE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7HK-o4-BKO" firstAttribute="centerY" secondItem="Yrl-Tp-crD" secondAttribute="centerY" id="KDG-71-gWw"/>
+                                                <constraint firstItem="7HK-o4-BKO" firstAttribute="leading" secondItem="Yrl-Tp-crD" secondAttribute="leadingMargin" id="a72-6U-OJf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7HK-o4-BKO" secondAttribute="trailing" id="z5u-en-rXk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="refreshButton" destination="7HK-o4-BKO" id="H0x-iz-69n"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryTableViewCell" rowHeight="300" id="1s2-a1-aRH" customClass="CategoryTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="514.5" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1s2-a1-aRH" id="AlX-Lb-96H">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="faF-aG-DQv">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="300"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UOJ-Xy-XjH">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="faF-aG-DQv" secondAttribute="trailing" constant="15" id="B9t-4G-Dyd"/>
+                                                <constraint firstItem="faF-aG-DQv" firstAttribute="leading" secondItem="AlX-Lb-96H" secondAttribute="leading" constant="15" id="lrN-Sf-Gno"/>
+                                                <constraint firstAttribute="bottom" secondItem="faF-aG-DQv" secondAttribute="bottom" id="qoY-bz-WqZ"/>
+                                                <constraint firstItem="faF-aG-DQv" firstAttribute="top" secondItem="AlX-Lb-96H" secondAttribute="top" id="wL1-k2-jwO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="faF-aG-DQv" id="tZh-cF-qWL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="onv-Yv-dPw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="onv-Yv-dPw" firstAttribute="trailing" secondItem="SPv-WE-fge" secondAttribute="trailing" constant="10" id="D6a-SP-s6p"/>
+                            <constraint firstItem="VW2-IO-YWh" firstAttribute="top" secondItem="SPv-WE-fge" secondAttribute="bottom" id="Iae-i6-ooF"/>
+                            <constraint firstItem="VW2-IO-YWh" firstAttribute="leading" secondItem="GC9-up-3nS" secondAttribute="leading" id="MdL-Zu-h6f"/>
+                            <constraint firstItem="onv-Yv-dPw" firstAttribute="trailing" secondItem="VW2-IO-YWh" secondAttribute="trailing" id="TfK-9e-bcy"/>
+                            <constraint firstItem="onv-Yv-dPw" firstAttribute="bottom" secondItem="VW2-IO-YWh" secondAttribute="bottom" id="U6t-aF-26Q"/>
+                            <constraint firstItem="SPv-WE-fge" firstAttribute="leading" secondItem="onv-Yv-dPw" secondAttribute="leading" constant="10" id="tZi-Zt-vf3"/>
+                            <constraint firstItem="SPv-WE-fge" firstAttribute="top" secondItem="onv-Yv-dPw" secondAttribute="top" id="y3J-nK-voe"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="search" id="es7-YF-8hN"/>
+                    <navigationItem key="navigationItem" title="검색" id="gSQ-aG-KnC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="VW2-IO-YWh" id="gfE-Y5-d0G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00B-Od-Fer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="294"/>
+            <point key="canvasLocation" x="713.04347826086962" y="293.97321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AQs-IM-KCb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="in3-Mo-SBr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="search" id="es7-YF-8hN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hp1-KJ-sMQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FfT-lz-Bq7" kind="relationship" relationship="rootViewController" id="yRy-Z3-fLy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nI-ZT-28R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="293.97321428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="goforward" catalog="system" width="121" height="128"/>
         <image name="search" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

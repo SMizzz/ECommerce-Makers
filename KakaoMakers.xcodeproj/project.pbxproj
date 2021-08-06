@@ -61,6 +61,19 @@
 		027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */; };
 		027D36F826BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */; };
 		027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */; };
+		029CBE6926BCD79E00046EEC /* BottomInformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */; };
+		029CBE6A26BCD79E00046EEC /* BottomInformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */; };
+		029CBE6D26BCD8E400046EEC /* BottomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */; };
+		029CBE6E26BCD8E400046EEC /* BottomDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */; };
+		029CBE7026BCF94900046EEC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6F26BCF94900046EEC /* SearchViewController.swift */; };
+		029CBE7526BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7426BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift */; };
+		029CBE7826BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7626BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift */; };
+		029CBE7926BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE7726BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib */; };
+		029CBE7B26BD049D00046EEC /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7A26BD049D00046EEC /* SearchData.swift */; };
+		029CBE7D26BD0F6100046EEC /* RefreshTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7C26BD0F6100046EEC /* RefreshTableViewCell.swift */; };
+		029CBE7F26BD113B00046EEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7E26BD113B00046EEC /* CategoryTableViewCell.swift */; };
+		029CBE8226BD119D00046EEC /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE8026BD119D00046EEC /* CategoryCollectionViewCell.swift */; };
+		029CBE8326BD119D00046EEC /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE8126BD119D00046EEC /* CategoryCollectionViewCell.xib */; };
 		02B4E90426B77D6C0085802F /* TalkAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */; };
 		02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */; };
 		02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */; };
@@ -129,6 +142,19 @@
 		027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaKaoInformTestViewController.xib; sourceTree = "<group>"; };
 		027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceLicenseViewController.swift; sourceTree = "<group>"; };
 		027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformProcessingPolicyViewController.swift; sourceTree = "<group>"; };
+		029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInformViewController.swift; sourceTree = "<group>"; };
+		029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomInformViewController.xib; sourceTree = "<group>"; };
+		029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDetailViewController.swift; sourceTree = "<group>"; };
+		029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomDetailViewController.xib; sourceTree = "<group>"; };
+		029CBE6F26BCF94900046EEC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		029CBE7426BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisWeekNewProductTableViewCell.swift; sourceTree = "<group>"; };
+		029CBE7626BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisWeekNewProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		029CBE7726BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThisWeekNewProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		029CBE7A26BD049D00046EEC /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		029CBE7C26BD0F6100046EEC /* RefreshTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTableViewCell.swift; sourceTree = "<group>"; };
+		029CBE7E26BD113B00046EEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		029CBE8026BD119D00046EEC /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		029CBE8126BD119D00046EEC /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		02B4E90326B77D6C0085802F /* TalkAlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTableViewCell.swift; sourceTree = "<group>"; };
 		02B4E90626B77D7A0085802F /* TalkAlertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertCollectionViewCell.swift; sourceTree = "<group>"; };
 		02B4E90726B77D7A0085802F /* TalkAlertCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkAlertCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -237,6 +263,7 @@
 		023CAE4226AE62330092EB89 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				029CBE6626BCD77E00046EEC /* ReusableView */,
 				027D36AB26BA7D8300E50BE8 /* Cell */,
 				027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */,
 				027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */,
@@ -326,6 +353,8 @@
 		027D369726BA586700E50BE8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				029CBE7A26BD049D00046EEC /* SearchData.swift */,
+				029CBE6F26BCF94900046EEC /* SearchViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -365,11 +394,37 @@
 			isa = PBXGroup;
 			children = (
 				026E40B626B117D90075A570 /* HomeCell */,
+				029CBE7126BCFA8600046EEC /* SearchCell */,
 				02B4E91526B7AFFB0085802F /* AlarmCell */,
 				0231825726B7FF0800DAC0E9 /* SettingCell */,
 				027D368B26BA571D00E50BE8 /* SettingDetailCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		029CBE6626BCD77E00046EEC /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */,
+				029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */,
+				029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */,
+				029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		029CBE7126BCFA8600046EEC /* SearchCell */ = {
+			isa = PBXGroup;
+			children = (
+				029CBE7426BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift */,
+				029CBE7626BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift */,
+				029CBE7726BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib */,
+				029CBE7C26BD0F6100046EEC /* RefreshTableViewCell.swift */,
+				029CBE7E26BD113B00046EEC /* CategoryTableViewCell.swift */,
+				029CBE8026BD119D00046EEC /* CategoryCollectionViewCell.swift */,
+				029CBE8126BD119D00046EEC /* CategoryCollectionViewCell.xib */,
+			);
+			path = SearchCell;
 			sourceTree = "<group>";
 		};
 		02B4E91526B7AFFB0085802F /* AlarmCell */ = {
@@ -469,13 +524,17 @@
 				023CAE1026AE55BE0092EB89 /* My.storyboard in Resources */,
 				023CADEB26AE51160092EB89 /* Assets.xcassets in Resources */,
 				024EAB4626BBBC80002734D6 /* HomeInquiryCollectionViewCell.xib in Resources */,
+				029CBE6E26BCD8E400046EEC /* BottomDetailViewController.xib in Resources */,
 				023CAE1926AE56640092EB89 /* Alarm.storyboard in Resources */,
+				029CBE6A26BCD79E00046EEC /* BottomInformViewController.xib in Resources */,
 				027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */,
+				029CBE7926BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib in Resources */,
 				02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */,
 				023CAE1626AE56470092EB89 /* Home.storyboard in Resources */,
 				02B4E90E26B78DE90085802F /* LikeItemCollectionViewCell.xib in Resources */,
 				023CADE926AE51150092EB89 /* Main.storyboard in Resources */,
 				0237E16926B2416200E20A24 /* AllItemTableViewCell.xib in Resources */,
+				029CBE8326BD119D00046EEC /* CategoryCollectionViewCell.xib in Resources */,
 				023CAE0926AE559C0092EB89 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,19 +595,23 @@
 				027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */,
 				0231826326B802ED00DAC0E9 /* SettingTableViewCell.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
+				029CBE6D26BCD8E400046EEC /* BottomDetailViewController.swift in Sources */,
 				024EAB3D26BBB86F002734D6 /* OneOnOneInquiryViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,
 				0237E16826B2416200E20A24 /* AllItemTableViewCell.swift in Sources */,
+				029CBE7826BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift in Sources */,
 				0237E17C26B2D61E00E20A24 /* OpenItemTitleCell.swift in Sources */,
 				027D36F826BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift in Sources */,
 				023CAE3C26AE5F380092EB89 /* NotiTabViewController.swift in Sources */,
 				026E40C426B125CF0075A570 /* MenuBarTableViewCell.swift in Sources */,
+				029CBE7B26BD049D00046EEC /* SearchData.swift in Sources */,
 				024EAB3B26BBB86F002734D6 /* HelpInquiryViewController.swift in Sources */,
 				0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
 				024EAB3C26BBB86F002734D6 /* HelpViewController.swift in Sources */,
 				027D36C326BA870400E50BE8 /* KaKaoInformViewController.swift in Sources */,
 				027D369D26BA58FC00E50BE8 /* PushAdViewController.swift in Sources */,
+				029CBE6926BCD79E00046EEC /* BottomInformViewController.swift in Sources */,
 				024EAB4126BBBC57002734D6 /* HomeInquiryTableViewCell.swift in Sources */,
 				024EAB3A26BBB86F002734D6 /* ProductInquiryViewController.swift in Sources */,
 				027D36BB26BA831600E50BE8 /* RefundManagementViewController.swift in Sources */,
@@ -557,21 +620,26 @@
 				027D369026BA574900E50BE8 /* PushAdTableViewCell.swift in Sources */,
 				024EAB4A26BBCEE2002734D6 /* QuestionAnswerCellTableViewCell.swift in Sources */,
 				023CAE4026AE5F4B0092EB89 /* AlarmDetailTabViewController.swift in Sources */,
+				029CBE8226BD119D00046EEC /* CategoryCollectionViewCell.swift in Sources */,
 				0212E83426B7198C000913C5 /* TalkAlertTitleTableViewCell.swift in Sources */,
 				023CAE2726AE59B70092EB89 /* RecentReadTabViewController.swift in Sources */,
 				027D36A126BA59FF00E50BE8 /* SettingData.swift in Sources */,
 				026E40B426B1152F0075A570 /* Extensions.swift in Sources */,
 				0237E17826B2859000E20A24 /* OpenItemTableViewCell.swift in Sources */,
 				02B4E91126B794E50085802F /* LikeTableViewCell.swift in Sources */,
+				029CBE7026BCF94900046EEC /* SearchViewController.swift in Sources */,
 				027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */,
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
+				029CBE7526BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,
 				027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */,
 				0231825A26B8001100DAC0E9 /* MyViewController.swift in Sources */,
+				029CBE7D26BD0F6100046EEC /* RefreshTableViewCell.swift in Sources */,
 				0237E17126B24E1900E20A24 /* ItemData.swift in Sources */,
 				023CAE1D26AE58CA0092EB89 /* HomeViewController.swift in Sources */,
 				023CAE2A26AE59BE0092EB89 /* HomeTabViewController.swift in Sources */,
 				024EAB4526BBBC80002734D6 /* HomeInquiryCollectionViewCell.swift in Sources */,
+				029CBE7F26BD113B00046EEC /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
