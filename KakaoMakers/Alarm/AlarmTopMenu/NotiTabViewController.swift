@@ -92,13 +92,13 @@ extension NotiTabViewController:
     self.notiTableView.reloadRows(at: [indexPath], with: .automatic)
   }
   
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    if expandedIndexSet.contains(indexPath.row) {
-      return UITableView.automaticDimension
-    } else {
-      return 85.0
-    }
-  }
+//  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//    if expandedIndexSet.contains(indexPath.row) {
+//      return UITableView.automaticDimension
+//    } else {
+//      return 85.0
+//    }
+//  }
 
   
 //  func tableView(

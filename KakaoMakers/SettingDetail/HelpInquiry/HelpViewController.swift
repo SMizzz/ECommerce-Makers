@@ -11,6 +11,7 @@ class HelpViewController: UIViewController {
   
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tableView: UITableView!
+  var expandedIndexSet: IndexSet = []
   
   var questionTitle = [
     "주문하기 전에 제품에 대해 궁금한 점이 있습니다.",
@@ -23,14 +24,15 @@ class HelpViewController: UIViewController {
     "메이커스에서는 어떤 이벤트를 진행하고 있나요?"
   ]
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     tabBarController?.tabBar.isHidden = true
     tableView.delegate = self
     tableView.dataSource = self
+    tableView.register(UINib(nibName: "InformationKakaoTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoTableViewCell")
+    
   }
-
+  
 }
 
 extension HelpViewController:
@@ -39,7 +41,7 @@ extension HelpViewController:
   func numberOfSections(
     in tableView: UITableView
   ) -> Int {
-    return 4
+    return 5
   }
   func tableView(
     _ tableView: UITableView,
@@ -52,6 +54,8 @@ extension HelpViewController:
     } else if section == 2 {
       return questionTitle.count
     } else if section == 3 {
+      return 1
+    } else if section == 4 {
       return 1
     }
     return 0
@@ -71,11 +75,14 @@ extension HelpViewController:
       let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionAnswerCell", for: indexPath) as! QuestionAnswerCellTableViewCell
       cell.titleLabel.text = questionTitle[indexPath.row]
       return cell
-    } else {
+    } else if indexPath.section == 3 {
       let cell = tableView.dequeueReusableCell(withIdentifier: "DeliveryGuideCell", for: indexPath)
       cell.textLabel?.text = "배송업체 안내"
       return cell
-    }
+    } else if indexPath.section == 4 {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "InformationKakaoTableViewCell", for: indexPath) as! InformationKakaoTableViewCell
+      return cell
+    } 
     return UITableViewCell()
   }
   
@@ -86,9 +93,26 @@ extension HelpViewController:
       return 70
     } else if indexPath.section == 2 {
       return 60
-    } else {
+    } else if indexPath.section == 3 {
       return 60
+    } else if indexPath.section == 4 {
+      if expandedIndexSet.contains(indexPath.row) {
+        return 330
+      } else {
+        return 100
+      }
     }
-    return 0
+    return UITableView.automaticDimension
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if indexPath.section == 4 {
+      if expandedIndexSet.contains(indexPath.row) {
+        expandedIndexSet.remove(indexPath.row)
+      } else {
+        expandedIndexSet.insert(indexPath.row)
+      }
+    }
+    self.tableView.reloadRows(at: [indexPath], with: .automatic)
   }
 }

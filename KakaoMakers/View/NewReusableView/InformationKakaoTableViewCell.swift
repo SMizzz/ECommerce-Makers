@@ -1,19 +1,16 @@
 //
-//  NotiTableViewCell.swift
+//  InformationKakaoTableViewCell.swift
 //  KakaoMakers
 //
-//  Created by 신미지 on 2021/08/02.
+//  Created by 신미지 on 2021/08/06.
 //
 
 import UIKit
 
-class NotiTableViewCell: UITableViewCell {
-
-  @IBOutlet weak var notiTitleLabel: UILabel!
-  @IBOutlet weak var dateLabel: UILabel!
-  @IBOutlet weak var moreButton: UIButton!
+class InformationKakaoTableViewCell: UITableViewCell {
+  @IBOutlet weak var kakaoCommerceButton: UIButton!
   
-  override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

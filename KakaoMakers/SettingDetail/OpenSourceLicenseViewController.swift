@@ -8,27 +8,31 @@
 import UIKit
 import WebKit
 
-class OpenSourceLicenseViewController: UIViewController {
+class OpenSourceLicenseViewController:
+  UIViewController,
+  WKNavigationDelegate,
+  WKUIDelegate {
   
   @IBOutlet weak var webView: WKWebView!
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    navigationController?.navigationBar.barTintColor = .white
-    tabBarController?.tabBar.isHidden = true
-    loadWebPage("https://www.google.com")
+  override func loadView() {
+    super.loadView()
+    webView = WKWebView(frame: self.view.frame)
+    self.view = self.webView!
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    navigationController?.navigationBar.isHidden = false
+    super.viewWillAppear(true)
+    tabBarController?.tabBar.isHidden = true
   }
   
-  private func loadWebPage(_ url: String) {
-    guard let myUrl = URL(string: url) else { return }
-    let request = URLRequest(url: myUrl)
+  override func viewDidLoad() {
+    super.viewDidLoad() 
+    let sURL = "https://m.naver.com"
+    let request = URLRequest(url: URL(string: sURL)!)
     webView.load(request)
   }
-  
+
   @IBAction func backBtnTap(_ sender: Any) {
     navigationController?.popViewController(animated: true)
   }

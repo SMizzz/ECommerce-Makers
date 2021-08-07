@@ -96,7 +96,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="faF-aG-DQv">
-                                                    <rect key="frame" x="15" y="0.0" width="384" height="300"/>
+                                                    <rect key="frame" x="15" y="0.0" width="319" height="300"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UOJ-Xy-XjH">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -108,7 +108,7 @@
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="faF-aG-DQv" secondAttribute="trailing" constant="15" id="B9t-4G-Dyd"/>
+                                                <constraint firstAttribute="trailing" secondItem="faF-aG-DQv" secondAttribute="trailing" constant="80" id="B9t-4G-Dyd"/>
                                                 <constraint firstItem="faF-aG-DQv" firstAttribute="leading" secondItem="AlX-Lb-96H" secondAttribute="leading" constant="15" id="lrN-Sf-Gno"/>
                                                 <constraint firstAttribute="bottom" secondItem="faF-aG-DQv" secondAttribute="bottom" id="qoY-bz-WqZ"/>
                                                 <constraint firstItem="faF-aG-DQv" firstAttribute="top" secondItem="AlX-Lb-96H" secondAttribute="top" id="wL1-k2-jwO"/>
