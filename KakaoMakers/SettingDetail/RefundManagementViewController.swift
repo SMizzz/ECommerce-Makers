@@ -11,63 +11,95 @@ class RefundManagementViewController: UIViewController {
   
   @IBOutlet weak var changeButton: UIButton!
   @IBOutlet weak var deleteButton: UIButton!
-  @IBOutlet weak var bottomView: UIView!
-  
-  let informVC = KaKaoInformViewController(
-    nibName: "KaKaoInformTestViewController",
-    bundle: nil)
+  @IBOutlet weak var tableView: UITableView!
+  var expandedIndexSet: IndexSet = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    addKakaoInformView(vc: self)
-    configureButton()
     navigationController?.navigationBar.barTintColor = .white
-    informVC.InformDetailView.isHidden = true
     tabBarController?.tabBar.isHidden = true
+    configureTableView()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     navigationController?.navigationBar.isHidden = false
   }
   
-  func addKakaoInformView(vc: UIViewController) {
-    bottomView.addSubview(informVC.view)
-    vc.addChild(informVC)
-  }
-  
-  private func configureButton() {
-    changeButton.layer.cornerRadius = 20
-    deleteButton.layer.cornerRadius = 20
-    
-    informVC.kakaoCommerceButton.addTarget(
-      self,
-      action: #selector(handleKakaoCommerceLogoButton),
-      for: .touchUpInside)
-  }
-  
-  @objc func handleKakaoCommerceLogoButton() {
-    if informVC.kakaoCommerceButton.tag == 0 {
-      informVC.kakaoCommerceButton.setImage(
-        UIImage(named: "cashKaKaoCommerceLogo_up"),
-        for: .normal)
-      informVC.InformDetailView.isHidden = false
-        informVC.kakaoCommerceButton.tag = 1
-    } else {
-      informVC.kakaoCommerceButton.setImage(
-        UIImage(named: "cashKaKaoCommerceLogo_down"),
-        for: .normal)
-      informVC.InformDetailView.isHidden = true
-      informVC.kakaoCommerceButton.tag = 0
-    }
+  private func configureTableView() {
+    tableView.dataSource = self
+    tableView.delegate = self
+    tableView.register(UINib(nibName: "InformationKakaoCenterTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoCenterTableViewCell")
+    tableView.register(UINib(nibName: "InformationKakaoTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoTableViewCell")
   }
   
   
-
   @IBAction func backBtnTap(_ sender: Any) {
     navigationController?.popViewController(animated: true)
   }
+}
+
+extension RefundManagementViewController:
+  UITableViewDelegate,
+  UITableViewDataSource {
+  func numberOfSections(
+    in tableView: UITableView
+  ) -> Int {
+    return 2
+  }
+  func tableView(
+    _ tableView: UITableView,
+    numberOfRowsInSection section: Int
+  ) -> Int {
+    if section == 0 {
+      return 1
+    } else if section == 1 {
+      return 1
+    }
+    return 1
+  }
   
-  @IBAction func changeBtnTap(_ sender: Any) {
-    
+  func tableView(
+    _ tableView: UITableView,
+    cellForRowAt indexPath: IndexPath
+  ) -> UITableViewCell {
+    if indexPath.section == 0 {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "InformationKakaoCenterTableViewCell", for: indexPath) as! InformationKakaoCenterTableViewCell
+      return cell
+    } else if indexPath.section == 1 {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "InformationKakaoTableViewCell", for: indexPath) as! InformationKakaoTableViewCell
+      return cell
+    }
+    return UITableViewCell()
+  }
+  
+  func tableView(
+    _ tableView: UITableView,
+    heightForRowAt indexPath: IndexPath
+  ) -> CGFloat {
+    if indexPath.section == 0 {
+      return 100
+    } else if indexPath.section == 1 {
+      if expandedIndexSet.contains(indexPath.row) {
+        return 270
+      } else {
+        return 70
+      }
+    }
+    return UITableView.automaticDimension
+  }
+  
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
+    if indexPath.section == 1 {
+      if expandedIndexSet.contains(indexPath.row) {
+        expandedIndexSet.remove(indexPath.row)
+      } else {
+        expandedIndexSet.insert(indexPath.row)
+      }
+    }
+    self.tableView.reloadRows(at: [indexPath], with: .automatic)
+    self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
   }
 }

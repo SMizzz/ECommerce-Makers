@@ -91,7 +91,10 @@ extension HelpViewController:
     return UITableViewCell()
   }
   
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+  func tableView(
+    _ tableView: UITableView,
+    heightForRowAt indexPath: IndexPath
+  ) -> CGFloat {
     if indexPath.section == 0 {
       return 150
     } else if indexPath.section == 1 {
@@ -112,7 +115,10 @@ extension HelpViewController:
     return UITableView.automaticDimension
   }
   
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
     if indexPath.section == 5 {
       if expandedIndexSet.contains(indexPath.row) {
         expandedIndexSet.remove(indexPath.row)
@@ -121,5 +127,6 @@ extension HelpViewController:
       }
     }
     self.tableView.reloadRows(at: [indexPath], with: .automatic)
+    self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
   }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0202A57326C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202A57126C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift */; };
 		0202A57426C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0202A57226C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib */; };
+		0202A57926C2E14300A6407E /* ConsultationInquiryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202A57726C2E14300A6407E /* ConsultationInquiryTableViewCell.swift */; };
+		0202A57A26C2E14300A6407E /* ConsultationInquiryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0202A57826C2E14300A6407E /* ConsultationInquiryTableViewCell.xib */; };
 		0212E83426B7198C000913C5 /* TalkAlertTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */; };
 		0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */; };
 		0231824C26B7FBFC00DAC0E9 /* NotiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0231824A26B7FBFC00DAC0E9 /* NotiTableViewCell.xib */; };
@@ -59,8 +61,6 @@
 		027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */; };
 		027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */; };
 		027D36BB26BA831600E50BE8 /* RefundManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */; };
-		027D36C326BA870400E50BE8 /* KaKaoInformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */; };
-		027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */; };
 		027D36F826BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */; };
 		027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */; };
 		029CBE7026BCF94900046EEC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6F26BCF94900046EEC /* SearchViewController.swift */; };
@@ -72,7 +72,6 @@
 		029CBE7F26BD113B00046EEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7E26BD113B00046EEC /* CategoryTableViewCell.swift */; };
 		029CBE8226BD119D00046EEC /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE8026BD119D00046EEC /* CategoryCollectionViewCell.swift */; };
 		029CBE8326BD119D00046EEC /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE8126BD119D00046EEC /* CategoryCollectionViewCell.xib */; };
-		02AE3EEA26BD3886003D8278 /* BottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AE3EE926BD3886003D8278 /* BottomTableViewCell.swift */; };
 		02AE3EEE26BD3C66003D8278 /* InformationKakaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AE3EEC26BD3C66003D8278 /* InformationKakaoTableViewCell.swift */; };
 		02AE3EEF26BD3C66003D8278 /* InformationKakaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02AE3EED26BD3C66003D8278 /* InformationKakaoTableViewCell.xib */; };
 		02AE3EF226BD4ADB003D8278 /* ProductsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AE3EF126BD4ADB003D8278 /* ProductsAPI.swift */; };
@@ -92,6 +91,8 @@
 /* Begin PBXFileReference section */
 		0202A57126C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationKakaoCenterTableViewCell.swift; sourceTree = "<group>"; };
 		0202A57226C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationKakaoCenterTableViewCell.xib; sourceTree = "<group>"; };
+		0202A57726C2E14300A6407E /* ConsultationInquiryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationInquiryTableViewCell.swift; sourceTree = "<group>"; };
+		0202A57826C2E14300A6407E /* ConsultationInquiryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultationInquiryTableViewCell.xib; sourceTree = "<group>"; };
 		0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTitleTableViewCell.swift; sourceTree = "<group>"; };
 		021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,8 +146,6 @@
 		027D36A526BA5CEE00E50BE8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		027D36A826BA600300E50BE8 /* CashReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashReceiptViewController.swift; sourceTree = "<group>"; };
 		027D36BA26BA831600E50BE8 /* RefundManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefundManagementViewController.swift; sourceTree = "<group>"; };
-		027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoInformViewController.swift; sourceTree = "<group>"; };
-		027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaKaoInformTestViewController.xib; sourceTree = "<group>"; };
 		027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceLicenseViewController.swift; sourceTree = "<group>"; };
 		027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformProcessingPolicyViewController.swift; sourceTree = "<group>"; };
 		029CBE6F26BCF94900046EEC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -158,7 +157,6 @@
 		029CBE7E26BD113B00046EEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		029CBE8026BD119D00046EEC /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		029CBE8126BD119D00046EEC /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		02AE3EE926BD3886003D8278 /* BottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTableViewCell.swift; sourceTree = "<group>"; };
 		02AE3EEC26BD3C66003D8278 /* InformationKakaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationKakaoTableViewCell.swift; sourceTree = "<group>"; };
 		02AE3EED26BD3C66003D8278 /* InformationKakaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationKakaoTableViewCell.xib; sourceTree = "<group>"; };
 		02AE3EF126BD4ADB003D8278 /* ProductsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAPI.swift; sourceTree = "<group>"; };
@@ -188,6 +186,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0202A57526C2E0D200A6407E /* SiteHelp */ = {
+			isa = PBXGroup;
+			children = (
+				024EAB4026BBBC57002734D6 /* HomeInquiryTableViewCell.swift */,
+				024EAB4326BBBC80002734D6 /* HomeInquiryCollectionViewCell.swift */,
+				024EAB4426BBBC80002734D6 /* HomeInquiryCollectionViewCell.xib */,
+				024EAB4926BBCEE2002734D6 /* QuestionAnswerCellTableViewCell.swift */,
+			);
+			path = SiteHelp;
+			sourceTree = "<group>";
+		};
+		0202A57626C2E0F500A6407E /* OneOnOne */ = {
+			isa = PBXGroup;
+			children = (
+				0202A57726C2E14300A6407E /* ConsultationInquiryTableViewCell.swift */,
+				0202A57826C2E14300A6407E /* ConsultationInquiryTableViewCell.xib */,
+			);
+			path = OneOnOne;
+			sourceTree = "<group>";
+		};
 		0231825726B7FF0800DAC0E9 /* SettingCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,8 +294,6 @@
 			children = (
 				02AE3EEB26BD3C46003D8278 /* NewReusableView */,
 				027D36AB26BA7D8300E50BE8 /* Cell */,
-				027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */,
-				027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,11 +312,8 @@
 		024EAB3F26BBBC3C002734D6 /* HelpInquiryCell */ = {
 			isa = PBXGroup;
 			children = (
-				024EAB4026BBBC57002734D6 /* HomeInquiryTableViewCell.swift */,
-				024EAB4326BBBC80002734D6 /* HomeInquiryCollectionViewCell.swift */,
-				024EAB4426BBBC80002734D6 /* HomeInquiryCollectionViewCell.xib */,
-				024EAB4926BBCEE2002734D6 /* QuestionAnswerCellTableViewCell.swift */,
-				02AE3EE926BD3886003D8278 /* BottomTableViewCell.swift */,
+				0202A57526C2E0D200A6407E /* SiteHelp */,
+				0202A57626C2E0F500A6407E /* OneOnOne */,
 			);
 			path = HelpInquiryCell;
 			sourceTree = "<group>";
@@ -551,13 +564,13 @@
 				027D368426BA52B500E50BE8 /* SettingDetail.storyboard in Resources */,
 				0237E17926B2859000E20A24 /* OpenItemTableViewCell.xib in Resources */,
 				026E40C926B126230075A570 /* MenuBarCollectionViewCell.xib in Resources */,
+				0202A57A26C2E14300A6407E /* ConsultationInquiryTableViewCell.xib in Resources */,
 				02AE3EEF26BD3C66003D8278 /* InformationKakaoTableViewCell.xib in Resources */,
 				023CADEE26AE51160092EB89 /* LaunchScreen.storyboard in Resources */,
 				023CAE1026AE55BE0092EB89 /* My.storyboard in Resources */,
 				023CADEB26AE51160092EB89 /* Assets.xcassets in Resources */,
 				024EAB4626BBBC80002734D6 /* HomeInquiryCollectionViewCell.xib in Resources */,
 				023CAE1926AE56640092EB89 /* Alarm.storyboard in Resources */,
-				027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */,
 				029CBE7926BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib in Resources */,
 				02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */,
 				023CAE1626AE56470092EB89 /* Home.storyboard in Resources */,
@@ -619,6 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0202A57926C2E14300A6407E /* ConsultationInquiryTableViewCell.swift in Sources */,
 				02B4E90D26B78DE90085802F /* LikeItemCollectionViewCell.swift in Sources */,
 				026E40C826B126230075A570 /* MenuBarCollectionViewCell.swift in Sources */,
 				02B4E90826B77D7A0085802F /* TalkAlertCollectionViewCell.swift in Sources */,
@@ -642,7 +656,6 @@
 				0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */,
 				023CAE4526AE624A0092EB89 /* DetailAlarmTableViewCell.swift in Sources */,
 				024EAB3C26BBB86F002734D6 /* HelpViewController.swift in Sources */,
-				027D36C326BA870400E50BE8 /* KaKaoInformViewController.swift in Sources */,
 				027D369D26BA58FC00E50BE8 /* PushAdViewController.swift in Sources */,
 				024EAB4126BBBC57002734D6 /* HomeInquiryTableViewCell.swift in Sources */,
 				024EAB3A26BBB86F002734D6 /* ProductInquiryViewController.swift in Sources */,
@@ -665,7 +678,6 @@
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
 				0202A57326C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift in Sources */,
 				029CBE7526BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift in Sources */,
-				02AE3EEA26BD3886003D8278 /* BottomTableViewCell.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,
 				027D36A626BA5CEE00E50BE8 /* SettingViewController.swift in Sources */,
 				02AE3EF226BD4ADB003D8278 /* ProductsAPI.swift in Sources */,

@@ -1,14 +1,15 @@
 //
-//  InformationKakaoTableViewCell.swift
+//  ConsultationInquiryTableViewCell.swift
 //  KakaoMakers
 //
-//  Created by 신미지 on 2021/08/06.
+//  Created by 신미지 on 2021/08/11.
 //
 
 import UIKit
 
-class InformationKakaoTableViewCell: UITableViewCell {
-  override func awakeFromNib() {
+class ConsultationInquiryTableViewCell: UITableViewCell {
+
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
