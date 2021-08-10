@@ -18,6 +18,11 @@ class HomeViewController: TabmanViewController {
     setLogo()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    tabBarController?.tabBar.isHidden = false
+  }
+  
   func setLogo() {
     navigationController?.navigationBar.barTintColor = .white
     let kakaoMakersLogoImage = UIImage(named: "kakaomakerslogo")

@@ -97,9 +97,9 @@ extension HelpViewController:
       return 60
     } else if indexPath.section == 4 {
       if expandedIndexSet.contains(indexPath.row) {
-        return 330
+        return 270
       } else {
-        return 100
+        return 70
       }
     }
     return UITableView.automaticDimension

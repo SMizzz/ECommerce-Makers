@@ -9,6 +9,7 @@ import Foundation
 
 struct Product: Codable {
   var id: String = ""
+  var category: String = ""
   var name: String = ""
   var price: Float = 0
   var imageName: String = ""
@@ -19,6 +20,7 @@ struct Product: Codable {
   
   enum CodingKeys: String, CodingKey {
     case id = "_id"
+    case category
     case name
     case price
     case imageName = "image"
@@ -31,6 +33,7 @@ struct Product: Codable {
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
     id = try values.decode(String.self, forKey: .id)
+    category = try values.decode(String.self, forKey: .category)
     name = try values.decode(String.self, forKey: .name)
     price = try values.decode(Float.self, forKey: .price)
     imageName = try values.decode(String.self, forKey: .imageName)

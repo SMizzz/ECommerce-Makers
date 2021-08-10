@@ -9,8 +9,9 @@ import UIKit
 
 class InformationKakaoTableViewCell: UITableViewCell {
   @IBOutlet weak var kakaoCommerceButton: UIButton!
+  @IBOutlet weak var expandableView: UIView!
   
-    override func awakeFromNib() {
+  override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
