@@ -14,7 +14,6 @@ class ProductsNetworkManager {
     completion: @escaping([Product]) -> ()) {
     ProgressHUD.show()
     provider.request(.getProducts) { (result) in
-      print(result)
       switch result {
       case .success(let res):
         do {
@@ -23,12 +22,12 @@ class ProductsNetworkManager {
           ProgressHUD.dismiss()
         } catch let err {
           ProgressHUD.dismiss()
-          print("++++++", err.localizedDescription)
+          print(err.localizedDescription)
           return
         }
       case .failure(let err):
         ProgressHUD.dismiss()
-        print("--------",err.localizedDescription)
+        print(err.localizedDescription)
         return
       }
     }

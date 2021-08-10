@@ -26,13 +26,13 @@ class ProductDetailViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
+    navigationController?.navigationBar.barTintColor = .white
     tabBarController?.tabBar.isHidden = true
   }
   
   private func getData() {
     ProductsNetworkManager.getDetailProductsData(id: id) { [self] (product) in
-      print(product)
-      categoryLabel.text = product.category
+      categoryLabel.text = "category > \(product.category)"
       productImageView.kf.setImage(with: URL(string: product.imageName))
       productNameLabel.text = product.name
       productPriceLabel.text = "\(product.price)$"
