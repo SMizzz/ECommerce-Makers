@@ -29,8 +29,8 @@ class HelpViewController: UIViewController {
     tabBarController?.tabBar.isHidden = true
     tableView.delegate = self
     tableView.dataSource = self
+    tableView.register(UINib(nibName: "InformationKakaoCenterTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoCenterTableViewCell")
     tableView.register(UINib(nibName: "InformationKakaoTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoTableViewCell")
-    
   }
   
 }
@@ -41,7 +41,7 @@ extension HelpViewController:
   func numberOfSections(
     in tableView: UITableView
   ) -> Int {
-    return 5
+    return 6
   }
   func tableView(
     _ tableView: UITableView,
@@ -56,6 +56,8 @@ extension HelpViewController:
     } else if section == 3 {
       return 1
     } else if section == 4 {
+      return 1
+    } else if section == 5 {
       return 1
     }
     return 0
@@ -80,6 +82,9 @@ extension HelpViewController:
       cell.textLabel?.text = "배송업체 안내"
       return cell
     } else if indexPath.section == 4 {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "InformationKakaoCenterTableViewCell", for: indexPath) as! InformationKakaoCenterTableViewCell
+      return cell
+    } else if indexPath.section == 5 {
       let cell = tableView.dequeueReusableCell(withIdentifier: "InformationKakaoTableViewCell", for: indexPath) as! InformationKakaoTableViewCell
       return cell
     } 
@@ -96,6 +101,8 @@ extension HelpViewController:
     } else if indexPath.section == 3 {
       return 60
     } else if indexPath.section == 4 {
+      return 100
+    } else if indexPath.section == 5 {
       if expandedIndexSet.contains(indexPath.row) {
         return 270
       } else {
@@ -106,7 +113,7 @@ extension HelpViewController:
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    if indexPath.section == 4 {
+    if indexPath.section == 5 {
       if expandedIndexSet.contains(indexPath.row) {
         expandedIndexSet.remove(indexPath.row)
       } else {

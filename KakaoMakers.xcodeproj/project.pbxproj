@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0202A57326C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202A57126C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift */; };
+		0202A57426C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0202A57226C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib */; };
 		0212E83426B7198C000913C5 /* TalkAlertTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */; };
 		0231824B26B7FBFC00DAC0E9 /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */; };
 		0231824C26B7FBFC00DAC0E9 /* NotiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0231824A26B7FBFC00DAC0E9 /* NotiTableViewCell.xib */; };
@@ -61,10 +63,6 @@
 		027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */; };
 		027D36F826BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */; };
 		027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */; };
-		029CBE6926BCD79E00046EEC /* BottomInformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */; };
-		029CBE6A26BCD79E00046EEC /* BottomInformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */; };
-		029CBE6D26BCD8E400046EEC /* BottomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */; };
-		029CBE6E26BCD8E400046EEC /* BottomDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */; };
 		029CBE7026BCF94900046EEC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE6F26BCF94900046EEC /* SearchViewController.swift */; };
 		029CBE7526BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7426BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift */; };
 		029CBE7826BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CBE7626BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift */; };
@@ -92,6 +90,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0202A57126C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationKakaoCenterTableViewCell.swift; sourceTree = "<group>"; };
+		0202A57226C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationKakaoCenterTableViewCell.xib; sourceTree = "<group>"; };
 		0212E83326B7198C000913C5 /* TalkAlertTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkAlertTitleTableViewCell.swift; sourceTree = "<group>"; };
 		021EDC51AD7675DF4699E461 /* Pods_KakaoMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0231824926B7FBFC00DAC0E9 /* NotiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
@@ -149,10 +149,6 @@
 		027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaKaoInformTestViewController.xib; sourceTree = "<group>"; };
 		027D36F726BAD5DB00E50BE8 /* OpenSourceLicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceLicenseViewController.swift; sourceTree = "<group>"; };
 		027D36FA26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformProcessingPolicyViewController.swift; sourceTree = "<group>"; };
-		029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInformViewController.swift; sourceTree = "<group>"; };
-		029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomInformViewController.xib; sourceTree = "<group>"; };
-		029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDetailViewController.swift; sourceTree = "<group>"; };
-		029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomDetailViewController.xib; sourceTree = "<group>"; };
 		029CBE6F26BCF94900046EEC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		029CBE7426BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisWeekNewProductTableViewCell.swift; sourceTree = "<group>"; };
 		029CBE7626BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisWeekNewProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -279,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				02AE3EEB26BD3C46003D8278 /* NewReusableView */,
-				029CBE6626BCD77E00046EEC /* ReusableView */,
 				027D36AB26BA7D8300E50BE8 /* Cell */,
 				027D36C126BA870400E50BE8 /* KaKaoInformViewController.swift */,
 				027D36C226BA870400E50BE8 /* KaKaoInformTestViewController.xib */,
@@ -420,17 +415,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		029CBE6626BCD77E00046EEC /* ReusableView */ = {
-			isa = PBXGroup;
-			children = (
-				029CBE6726BCD79E00046EEC /* BottomInformViewController.swift */,
-				029CBE6826BCD79E00046EEC /* BottomInformViewController.xib */,
-				029CBE6B26BCD8E400046EEC /* BottomDetailViewController.swift */,
-				029CBE6C26BCD8E400046EEC /* BottomDetailViewController.xib */,
-			);
-			path = ReusableView;
-			sourceTree = "<group>";
-		};
 		029CBE7126BCFA8600046EEC /* SearchCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +432,8 @@
 		02AE3EEB26BD3C46003D8278 /* NewReusableView */ = {
 			isa = PBXGroup;
 			children = (
+				0202A57126C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift */,
+				0202A57226C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib */,
 				02AE3EEC26BD3C66003D8278 /* InformationKakaoTableViewCell.swift */,
 				02AE3EED26BD3C66003D8278 /* InformationKakaoTableViewCell.xib */,
 			);
@@ -570,9 +556,7 @@
 				023CAE1026AE55BE0092EB89 /* My.storyboard in Resources */,
 				023CADEB26AE51160092EB89 /* Assets.xcassets in Resources */,
 				024EAB4626BBBC80002734D6 /* HomeInquiryCollectionViewCell.xib in Resources */,
-				029CBE6E26BCD8E400046EEC /* BottomDetailViewController.xib in Resources */,
 				023CAE1926AE56640092EB89 /* Alarm.storyboard in Resources */,
-				029CBE6A26BCD79E00046EEC /* BottomInformViewController.xib in Resources */,
 				027D36C426BA870400E50BE8 /* KaKaoInformTestViewController.xib in Resources */,
 				029CBE7926BCFDC700046EEC /* ThisWeekNewProductCollectionViewCell.xib in Resources */,
 				02B4E90926B77D7A0085802F /* TalkAlertCollectionViewCell.xib in Resources */,
@@ -582,6 +566,7 @@
 				0237E16926B2416200E20A24 /* AllItemTableViewCell.xib in Resources */,
 				029CBE8326BD119D00046EEC /* CategoryCollectionViewCell.xib in Resources */,
 				023CAE0926AE559C0092EB89 /* Search.storyboard in Resources */,
+				0202A57426C29E6200A6407E /* InformationKakaoCenterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +626,6 @@
 				027D36A926BA600300E50BE8 /* CashReceiptViewController.swift in Sources */,
 				0231826326B802ED00DAC0E9 /* SettingTableViewCell.swift in Sources */,
 				023CAE3026AE59D70092EB89 /* LikeTabViewController.swift in Sources */,
-				029CBE6D26BCD8E400046EEC /* BottomDetailViewController.swift in Sources */,
 				02AE3EF626BD4D1C003D8278 /* ProductsNetworkManager.swift in Sources */,
 				024EAB3D26BBB86F002734D6 /* OneOnOneInquiryViewController.swift in Sources */,
 				023CADE226AE51150092EB89 /* AppDelegate.swift in Sources */,
@@ -660,7 +644,6 @@
 				024EAB3C26BBB86F002734D6 /* HelpViewController.swift in Sources */,
 				027D36C326BA870400E50BE8 /* KaKaoInformViewController.swift in Sources */,
 				027D369D26BA58FC00E50BE8 /* PushAdViewController.swift in Sources */,
-				029CBE6926BCD79E00046EEC /* BottomInformViewController.swift in Sources */,
 				024EAB4126BBBC57002734D6 /* HomeInquiryTableViewCell.swift in Sources */,
 				024EAB3A26BBB86F002734D6 /* ProductInquiryViewController.swift in Sources */,
 				027D36BB26BA831600E50BE8 /* RefundManagementViewController.swift in Sources */,
@@ -680,6 +663,7 @@
 				029CBE7026BCF94900046EEC /* SearchViewController.swift in Sources */,
 				027D36FB26BADA7100E50BE8 /* PersonalInformProcessingPolicyViewController.swift in Sources */,
 				023CAE3326AE5E750092EB89 /* AlarmViewController.swift in Sources */,
+				0202A57326C29E6200A6407E /* InformationKakaoCenterTableViewCell.swift in Sources */,
 				029CBE7526BCFBA600046EEC /* ThisWeekNewProductTableViewCell.swift in Sources */,
 				02AE3EEA26BD3886003D8278 /* BottomTableViewCell.swift in Sources */,
 				023CAE2D26AE59C80092EB89 /* OpenTabViewController.swift in Sources */,

@@ -866,8 +866,16 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottomTableViewCell" rowHeight="242" id="SAs-M9-Wdk" customClass="BottomTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="364.5" width="414" height="242"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InformationKakaoCenterTableViewCell" rowHeight="56" id="t9F-LS-WoI" customClass="InformationKakaoCenterTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="364.5" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t9F-LS-WoI" id="CtZ-cS-oXu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InformationKakaoTableViewCell" rowHeight="242" id="SAs-M9-Wdk" customClass="InformationKakaoTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="420.5" width="414" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SAs-M9-Wdk" id="pD2-pa-tGe">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="242"/>
