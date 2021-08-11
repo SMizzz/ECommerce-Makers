@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Anb-gH-qkv">
             <objects>
-                <viewController id="jKC-0F-eki" sceneMemberID="viewController">
+                <viewController id="jKC-0F-eki" customClass="LoginViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gLU-oE-xju">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,9 @@
                             <constraint firstItem="s18-8N-eAN" firstAttribute="top" secondItem="foZ-4L-diy" secondAttribute="bottom" id="pJY-f6-BWq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kakaoLoginButton" destination="s18-8N-eAN" id="tb7-ZK-dgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r12-yY-ANf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

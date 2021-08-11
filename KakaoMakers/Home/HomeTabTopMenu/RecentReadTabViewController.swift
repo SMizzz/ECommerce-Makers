@@ -23,6 +23,9 @@ class RecentReadTabViewController: UIViewController {
     tableView.delegate = self
     tableView.dataSource = self
     tableView.register(UINib(nibName: "RecentViewListTableViewCell", bundle: nil), forCellReuseIdentifier: "RecentViewListTableViewCell")
+    tableView.register(UINib(nibName: "RecentAddKakaoChannelTableViewCell", bundle: nil), forCellReuseIdentifier: "RecentAddKakaoChannelTableViewCell")
+    tableView.register(UINib(nibName: "RecentInquiryTableViewCell", bundle: nil), forCellReuseIdentifier: "RecentInquiryTableViewCell")
+    tableView.register(UINib(nibName: "RecentIntroduceShareTableViewCell", bundle: nil), forCellReuseIdentifier: "RecentIntroduceShareTableViewCell")
     tableView.register(UINib(nibName: "InformationKakaoCenterTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoCenterTableViewCell")
     tableView.register(UINib(nibName: "InformationKakaoTableViewCell", bundle: nil), forCellReuseIdentifier: "InformationKakaoTableViewCell")
   }
@@ -49,20 +52,8 @@ extension RecentReadTabViewController:
     _ tableView: UITableView,
     numberOfRowsInSection section: Int
   ) -> Int {
-    if section == 0 {
-      return 1
-    } else if section == 1 {
+    if section == 1 {
       return product.count
-    } else if section == 2 {
-      return 1
-    } else if section == 3 {
-      return 1
-    } else if section == 4 {
-      return 1
-    } else if section == 5 {
-      return 1
-    } else if section == 6 {
-      return 1
     }
     return 1
   }
@@ -85,10 +76,10 @@ extension RecentReadTabViewController:
       cell.orderLabel.text = "잔여: \(productData.countInStock)개"
       return cell
     } else if indexPath.section == 2 {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "RecentAddKakaoChannelTableViewCell", for: indexPath)
+      let cell = tableView.dequeueReusableCell(withIdentifier: "RecentAddKakaoChannelTableViewCell", for: indexPath) as! RecentAddKakaoChannelTableViewCell
       return cell
     } else if indexPath.section == 3 {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "RecentInquiryTableViewCell", for: indexPath)
+      let cell = tableView.dequeueReusableCell(withIdentifier: "RecentInquiryTableViewCell", for: indexPath) as! RecentInquiryTableViewCell
       return cell
     } else if indexPath.section == 4 {
       let cell = tableView.dequeueReusableCell(withIdentifier: "RecentIntroduceShareTableViewCell", for: indexPath) as! RecentIntroduceShareTableViewCell
@@ -112,7 +103,7 @@ extension RecentReadTabViewController:
     } else if indexPath.section == 1 {
       return 130.0
     } else if indexPath.section == 2 {
-      return 375.0
+      return 300.0
     } else if indexPath.section == 3 {
       return 100.0
     } else if indexPath.section == 4 {

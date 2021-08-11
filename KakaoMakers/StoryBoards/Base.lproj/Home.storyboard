@@ -257,172 +257,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentAddKakaoChannelTableViewCell" rowHeight="375" id="KWT-Og-kqO" customClass="RecentAddKakaoChannelTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="214.5" width="414" height="375"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentAddKakaoChannelTableViewCell" id="nVj-AV-PfN" customClass="RecentAddKakaoChannelTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWT-Og-kqO" id="b1o-go-VmL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nVj-AV-PfN" id="Kdg-dc-ZWA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Den-QS-ddG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="180" id="uIA-Ub-Ugk"/>
-                                                    </constraints>
-                                                </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="asx-Dg-NVa">
-                                                    <rect key="frame" x="97" y="202" width="220" height="140"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="신제품 소식을 알려드려요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u57-ZY-Jj1">
-                                                            <rect key="frame" x="17" y="0.0" width="186" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="지금 메이커스 채널을 추가하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzm-GJ-TAU">
-                                                            <rect key="frame" x="17.5" y="31.5" width="185" height="17"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehS-Qp-LWu">
-                                                            <rect key="frame" x="20" y="58.5" width="180" height="40"/>
-                                                            <color key="backgroundColor" red="0.96887785199999998" green="0.82021874189999999" blue="0.0062500187200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="40" id="bCY-fe-mLZ"/>
-                                                                <constraint firstAttribute="width" constant="180" id="vsL-dk-DoH"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                            <state key="normal" title=" 채널 추가 및 알림동의" image="kakaochannellogo">
-                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                        </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="메이커스 채널 정보와 이벤트에 대한 알림을 카카오톡으로 받을 수 있습니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozf-Tt-w6d">
-                                                            <rect key="frame" x="0.0" y="108.5" width="220" height="31.5"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Den-QS-ddG" firstAttribute="top" secondItem="b1o-go-VmL" secondAttribute="top" id="765-FX-d3l"/>
-                                                <constraint firstItem="asx-Dg-NVa" firstAttribute="centerX" secondItem="b1o-go-VmL" secondAttribute="centerX" id="MR0-eo-MMR"/>
-                                                <constraint firstAttribute="trailing" secondItem="Den-QS-ddG" secondAttribute="trailing" id="R3t-TO-5cz"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="asx-Dg-NVa" secondAttribute="bottom" constant="22" id="oAh-fg-a1d"/>
-                                                <constraint firstItem="Den-QS-ddG" firstAttribute="leading" secondItem="b1o-go-VmL" secondAttribute="leading" id="pUn-8E-jU9"/>
-                                                <constraint firstItem="asx-Dg-NVa" firstAttribute="top" secondItem="Den-QS-ddG" secondAttribute="bottom" constant="22" id="qO9-gp-3JW"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.95677906270000002" green="0.95691639179999999" blue="0.956749022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <outlet property="addChannelButton" destination="ehS-Qp-LWu" id="LtU-oE-6lW"/>
-                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentInquiryTableViewCell" rowHeight="100" id="A2g-in-ecd">
-                                        <rect key="frame" x="0.0" y="589.5" width="414" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentInquiryTableViewCell" rowHeight="52" id="A2g-in-ecd" customClass="RecentInquiryTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="258" width="414" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A2g-in-ecd" id="56Z-VS-3jT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="U93-0P-Sp9">
-                                                    <rect key="frame" x="20" y="16.5" width="119" height="67"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRm-XL-YEN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="119" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                            <state key="normal" title="대량 구매 문의하기">
-                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9r-Bc-nxw">
-                                                            <rect key="frame" x="0.0" y="35" width="88" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                            <state key="normal" title="입점 문의하기">
-                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="U93-0P-Sp9" firstAttribute="leading" secondItem="56Z-VS-3jT" secondAttribute="leading" constant="20" id="EkG-Xh-wBE"/>
-                                                <constraint firstItem="U93-0P-Sp9" firstAttribute="centerY" secondItem="56Z-VS-3jT" secondAttribute="centerY" id="Y3v-Zf-diH"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentIntroduceShareTableViewCell" rowHeight="100" id="Z9J-WI-fIK" customClass="RecentIntroduceShareTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="689.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="310" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z9J-WI-fIK" id="df9-HN-TUp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-io-gxv">
-                                                    <rect key="frame" x="15" y="18" width="129" height="64"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9q-t0-HyH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="129" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                            <state key="normal" title="카카오메이커스 소개">
-                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buX-d8-dgA">
-                                                            <rect key="frame" x="0.0" y="32" width="56" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                            <state key="normal" title="공유하기">
-                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-nY-yxa">
-                                                    <rect key="frame" x="308" y="60" width="71" height="22"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28b-Il-3LD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="23" height="22"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="23" id="TVL-Cy-yID"/>
-                                                            </constraints>
-                                                            <state key="normal" image="kakaoblack"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-dy-29f">
-                                                            <rect key="frame" x="33" y="0.0" width="18" height="22"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="18" id="Uyx-Py-F33"/>
-                                                            </constraints>
-                                                            <state key="normal" image="kakaostoryblacklogo"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apt-Pf-dRq">
-                                                            <rect key="frame" x="61" y="0.0" width="10" height="22"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="10" id="CQl-2K-xcE"/>
-                                                            </constraints>
-                                                            <state key="normal" image="facebookblacklogo"/>
-                                                        </button>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="K8E-nY-yxa" firstAttribute="bottom" secondItem="3ug-io-gxv" secondAttribute="bottom" id="EaV-DY-O4R"/>
-                                                <constraint firstItem="3ug-io-gxv" firstAttribute="leading" secondItem="df9-HN-TUp" secondAttribute="leading" constant="15" id="RLO-2g-H4L"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="K8E-nY-yxa" secondAttribute="trailing" constant="15" id="ijO-3j-z8x"/>
-                                                <constraint firstItem="3ug-io-gxv" firstAttribute="centerY" secondItem="df9-HN-TUp" secondAttribute="centerY" id="mhO-rR-f5w"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="facebookLogoButton" destination="apt-Pf-dRq" id="prn-SA-OPX"/>
-                                            <outlet property="kakaoMakersIntroduceButton" destination="d9q-t0-HyH" id="7R4-mK-tsF"/>
-                                            <outlet property="storyLogoButton" destination="x2Z-dy-29f" id="8ev-ns-YKD"/>
-                                            <outlet property="talkLogoButton" destination="28b-Il-3LD" id="0GE-ry-ufL"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YFi-ig-Gay">
-                                        <rect key="frame" x="0.0" y="789.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="410" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YFi-ig-Gay" id="hv9-wq-iW7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -430,7 +290,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VRa-Il-Fe2">
-                                        <rect key="frame" x="0.0" y="833" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="453.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRa-Il-Fe2" id="CeG-mj-SHD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -844,15 +704,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikeTableViewCell" rowHeight="354" id="8fG-ZE-uAm" customClass="LikeTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="354"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikeTableViewCell" rowHeight="230" id="8fG-ZE-uAm" customClass="LikeTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="230"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8fG-ZE-uAm" id="864-zP-bGe">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L80-YI-60n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qn0-Br-CbI">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -873,6 +733,46 @@
                                         <connections>
                                             <outlet property="collectionView" destination="L80-YI-60n" id="c7d-G9-smS"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentAddKakaoChannelTableViewCell" id="qL8-DH-2gr" customClass="RecentAddKakaoChannelTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="254.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qL8-DH-2gr" id="7UC-61-He9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentInquiryTableViewCell" id="AHs-Ei-pe5" customClass="RecentInquiryTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="298" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHs-Ei-pe5" id="gMq-yw-DXl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentIntroduceShareTableViewCell" id="TKB-SS-niC" customClass="RecentIntroduceShareTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="341.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TKB-SS-niC" id="PPf-Cv-YZe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RV4-2n-s9L">
+                                        <rect key="frame" x="0.0" y="385" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RV4-2n-s9L" id="yL5-G1-VE3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KKp-ML-1rb">
+                                        <rect key="frame" x="0.0" y="428.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KKp-ML-1rb" id="SDa-94-esI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -927,11 +827,7 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="facebookblacklogo" width="9" height="16"/>
         <image name="home" width="24" height="24"/>
-        <image name="kakaoblack" width="22" height="20"/>
-        <image name="kakaochannellogo" width="23.5" height="23.5"/>
-        <image name="kakaostoryblacklogo" width="22" height="22"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

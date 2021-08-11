@@ -8,13 +8,11 @@
 import UIKit
 
 class RecentAddKakaoChannelTableViewCell: UITableViewCell {
-
+  
   @IBOutlet weak var addChannelButton: UIButton!
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    addChannelButton.layer.masksToBounds = true
-    addChannelButton.layer.cornerRadius = self.frame.size.width / 20
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

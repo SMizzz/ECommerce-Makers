@@ -1,5 +1,5 @@
 //
-//  RecentIntroduceShareTableViewCell.swift
+//  RecentInquiryTableViewCell.swift
 //  KakaoMakers
 //
 //  Created by 신미지 on 2021/08/12.
@@ -7,14 +7,10 @@
 
 import UIKit
 
-class RecentIntroduceShareTableViewCell: UITableViewCell {
+class RecentInquiryTableViewCell: UITableViewCell {
 
-  @IBOutlet weak var introduceButton: UIButton!
-  @IBOutlet weak var shareButton: UIButton!
-  
-  @IBOutlet weak var talkLogoButton: UIButton!
-  @IBOutlet weak var storyLogoButton: UIButton!
-  @IBOutlet weak var facebookLogoButton: UIButton!
+  @IBOutlet weak var largeAmountPurchaseButton: UIButton!
+  @IBOutlet weak var enterButton: UIButton!
   
   override func awakeFromNib() {
         super.awakeFromNib()
