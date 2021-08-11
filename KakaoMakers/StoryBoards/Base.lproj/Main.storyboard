@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZN7-ef-Xc4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZN7-ef-Xc4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Anb-gH-qkv">
+            <objects>
+                <viewController id="jKC-0F-eki" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLU-oE-xju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="foZ-4L-diy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="770" id="kmd-kb-nKg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s18-8N-eAN">
+                                <rect key="frame" x="0.0" y="770" width="414" height="92"/>
+                                <color key="backgroundColor" red="0.99624925850000001" green="0.84787482020000005" blue="0.0046515003779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="카카오계정으로 로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rPa-0Q-Wgb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rPa-0Q-Wgb" firstAttribute="trailing" secondItem="s18-8N-eAN" secondAttribute="trailing" id="1Jk-Kn-O9M"/>
+                            <constraint firstItem="foZ-4L-diy" firstAttribute="top" secondItem="gLU-oE-xju" secondAttribute="top" id="Cq7-Ic-TUU"/>
+                            <constraint firstItem="rPa-0Q-Wgb" firstAttribute="bottom" secondItem="s18-8N-eAN" secondAttribute="bottom" id="e6Z-iB-AyE"/>
+                            <constraint firstItem="s18-8N-eAN" firstAttribute="leading" secondItem="rPa-0Q-Wgb" secondAttribute="leading" id="ifC-ZD-pA1"/>
+                            <constraint firstItem="foZ-4L-diy" firstAttribute="trailing" secondItem="rPa-0Q-Wgb" secondAttribute="trailing" id="jyP-LE-qWc"/>
+                            <constraint firstItem="foZ-4L-diy" firstAttribute="leading" secondItem="rPa-0Q-Wgb" secondAttribute="leading" id="k7N-gE-mU6"/>
+                            <constraint firstItem="s18-8N-eAN" firstAttribute="top" secondItem="foZ-4L-diy" secondAttribute="bottom" id="pJY-f6-BWq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r12-yY-ANf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-653.62318840579712" y="-475.44642857142856"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3HL-H5-P3E">
             <objects>
@@ -68,4 +110,10 @@
             <point key="canvasLocation" x="657" y="407"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login" width="828" height="1504"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -46,11 +46,6 @@ class NotiTabViewController:
 extension NotiTabViewController:
   UITableViewDelegate,
   UITableViewDataSource {
-  
-  func numberOfSections(in tableView: UITableView) -> Int {
-    return notiData == nil ? 0 : 1
-  }
-  
   func tableView(
     _ tableView: UITableView,
     numberOfRowsInSection section: Int

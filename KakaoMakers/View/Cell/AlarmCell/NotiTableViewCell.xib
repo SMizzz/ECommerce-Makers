@@ -17,33 +17,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41i-GO-URN">
-                        <rect key="frame" x="380.5" y="20" width="18.5" height="25"/>
+                        <rect key="frame" x="380.5" y="18.5" width="18.5" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="O3t-JV-58I"/>
                         </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" image="chevron.down" catalog="system"/>
                     </button>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-3t-fAG">
                         <rect key="frame" x="15" y="18.5" width="340.5" height="52.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-lG-uWV">
-                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-lG-uWV">
+                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6L-0I-mwc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6L-0I-mwc">
                                 <rect key="frame" x="0.0" y="35.5" width="35.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="41i-GO-URN" firstAttribute="top" secondItem="UUi-3t-fAG" secondAttribute="top" id="Byw-mk-BGb"/>
                     <constraint firstAttribute="trailing" secondItem="41i-GO-URN" secondAttribute="trailing" constant="15" id="FUt-J0-oFz"/>
-                    <constraint firstItem="41i-GO-URN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="WM1-ee-d4R"/>
                     <constraint firstItem="41i-GO-URN" firstAttribute="leading" secondItem="UUi-3t-fAG" secondAttribute="trailing" constant="25" id="dof-n7-jSm"/>
                     <constraint firstAttribute="bottom" secondItem="UUi-3t-fAG" secondAttribute="bottom" constant="18" id="h2c-kw-yPZ"/>
                     <constraint firstItem="UUi-3t-fAG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18.5" id="uNp-hE-7G1"/>

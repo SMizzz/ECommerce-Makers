@@ -40,4 +40,7 @@ class ProductDetailViewController: UIViewController {
       productDescriptionLabel.text = product.description
     }
   }
+  @IBAction func backBtnTap(_ sender: Any) {
+    navigationController?.popViewController(animated: true)
+  }
 }

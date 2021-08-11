@@ -155,6 +155,9 @@
                         <leftBarButtonItems>
                             <barButtonItem title="Item" image="arrow.left" catalog="system" id="ljf-gh-swc">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="backBtnTap:" destination="JOq-gq-zAh" id="CYM-re-kr3"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="home" id="5Is-h3-2u5">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,13 +208,482 @@
                     <view key="view" contentMode="scaleToFill" id="rh3-ZX-yZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6O-zW-2P1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentAllDeleteTableViewCell" rowHeight="60" id="L19-pp-CUV" customClass="RecentAllDeleteTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L19-pp-CUV" id="OJB-oP-xy2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 1주간 최대 50개까지 저장됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80F-qZ-JjG">
+                                                    <rect key="frame" x="20" y="21.5" width="212.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-n6-EMw">
+                                                    <rect key="frame" x="345" y="15.5" width="49" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="전체삭제">
+                                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="allDeleteBtnTap:" destination="L19-pp-CUV" eventType="touchUpInside" id="FJs-t3-z4u"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JRg-n6-EMw" firstAttribute="centerY" secondItem="OJB-oP-xy2" secondAttribute="centerY" id="Zdg-ZQ-CdE"/>
+                                                <constraint firstItem="80F-qZ-JjG" firstAttribute="leading" secondItem="OJB-oP-xy2" secondAttribute="leadingMargin" id="bWD-rN-fxn"/>
+                                                <constraint firstItem="80F-qZ-JjG" firstAttribute="centerY" secondItem="OJB-oP-xy2" secondAttribute="centerY" id="e42-6s-7Ld"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JRg-n6-EMw" secondAttribute="trailing" id="rIl-2a-MXh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="allDeleteButton" destination="JRg-n6-EMw" id="fCg-Ah-7I8"/>
+                                            <outlet property="recentTitleLabel" destination="80F-qZ-JjG" id="ZFW-8K-VlR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentViewListTableViewCell" rowHeight="130" id="tbh-df-Voe" customClass="RecentViewListTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tbh-df-Voe" id="1jC-uj-ZcO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentAddKakaoChannelTableViewCell" rowHeight="375" id="KWT-Og-kqO" customClass="RecentAddKakaoChannelTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214.5" width="414" height="375"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWT-Og-kqO" id="b1o-go-VmL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Den-QS-ddG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="uIA-Ub-Ugk"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="asx-Dg-NVa">
+                                                    <rect key="frame" x="97" y="202" width="220" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="신제품 소식을 알려드려요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u57-ZY-Jj1">
+                                                            <rect key="frame" x="17" y="0.0" width="186" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="지금 메이커스 채널을 추가하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzm-GJ-TAU">
+                                                            <rect key="frame" x="17.5" y="31.5" width="185" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehS-Qp-LWu">
+                                                            <rect key="frame" x="20" y="58.5" width="180" height="40"/>
+                                                            <color key="backgroundColor" red="0.96887785199999998" green="0.82021874189999999" blue="0.0062500187200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="bCY-fe-mLZ"/>
+                                                                <constraint firstAttribute="width" constant="180" id="vsL-dk-DoH"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal" title=" 채널 추가 및 알림동의" image="kakaochannellogo">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="메이커스 채널 정보와 이벤트에 대한 알림을 카카오톡으로 받을 수 있습니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozf-Tt-w6d">
+                                                            <rect key="frame" x="0.0" y="108.5" width="220" height="31.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Den-QS-ddG" firstAttribute="top" secondItem="b1o-go-VmL" secondAttribute="top" id="765-FX-d3l"/>
+                                                <constraint firstItem="asx-Dg-NVa" firstAttribute="centerX" secondItem="b1o-go-VmL" secondAttribute="centerX" id="MR0-eo-MMR"/>
+                                                <constraint firstAttribute="trailing" secondItem="Den-QS-ddG" secondAttribute="trailing" id="R3t-TO-5cz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="asx-Dg-NVa" secondAttribute="bottom" constant="22" id="oAh-fg-a1d"/>
+                                                <constraint firstItem="Den-QS-ddG" firstAttribute="leading" secondItem="b1o-go-VmL" secondAttribute="leading" id="pUn-8E-jU9"/>
+                                                <constraint firstItem="asx-Dg-NVa" firstAttribute="top" secondItem="Den-QS-ddG" secondAttribute="bottom" constant="22" id="qO9-gp-3JW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95677906270000002" green="0.95691639179999999" blue="0.956749022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="addChannelButton" destination="ehS-Qp-LWu" id="LtU-oE-6lW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentInquiryTableViewCell" rowHeight="100" id="A2g-in-ecd">
+                                        <rect key="frame" x="0.0" y="589.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A2g-in-ecd" id="56Z-VS-3jT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="U93-0P-Sp9">
+                                                    <rect key="frame" x="20" y="16.5" width="119" height="67"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRm-XL-YEN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="119" height="32"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <state key="normal" title="대량 구매 문의하기">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9r-Bc-nxw">
+                                                            <rect key="frame" x="0.0" y="35" width="88" height="32"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <state key="normal" title="입점 문의하기">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U93-0P-Sp9" firstAttribute="leading" secondItem="56Z-VS-3jT" secondAttribute="leading" constant="20" id="EkG-Xh-wBE"/>
+                                                <constraint firstItem="U93-0P-Sp9" firstAttribute="centerY" secondItem="56Z-VS-3jT" secondAttribute="centerY" id="Y3v-Zf-diH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentIntroduceShareTableViewCell" rowHeight="100" id="Z9J-WI-fIK" customClass="RecentIntroduceShareTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="689.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z9J-WI-fIK" id="df9-HN-TUp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-io-gxv">
+                                                    <rect key="frame" x="15" y="18" width="129" height="64"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9q-t0-HyH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="129" height="32"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <state key="normal" title="카카오메이커스 소개">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buX-d8-dgA">
+                                                            <rect key="frame" x="0.0" y="32" width="56" height="32"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <state key="normal" title="공유하기">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-nY-yxa">
+                                                    <rect key="frame" x="308" y="60" width="71" height="22"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28b-Il-3LD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="23" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="23" id="TVL-Cy-yID"/>
+                                                            </constraints>
+                                                            <state key="normal" image="kakaoblack"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-dy-29f">
+                                                            <rect key="frame" x="33" y="0.0" width="18" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="18" id="Uyx-Py-F33"/>
+                                                            </constraints>
+                                                            <state key="normal" image="kakaostoryblacklogo"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apt-Pf-dRq">
+                                                            <rect key="frame" x="61" y="0.0" width="10" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="CQl-2K-xcE"/>
+                                                            </constraints>
+                                                            <state key="normal" image="facebookblacklogo"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="K8E-nY-yxa" firstAttribute="bottom" secondItem="3ug-io-gxv" secondAttribute="bottom" id="EaV-DY-O4R"/>
+                                                <constraint firstItem="3ug-io-gxv" firstAttribute="leading" secondItem="df9-HN-TUp" secondAttribute="leading" constant="15" id="RLO-2g-H4L"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="K8E-nY-yxa" secondAttribute="trailing" constant="15" id="ijO-3j-z8x"/>
+                                                <constraint firstItem="3ug-io-gxv" firstAttribute="centerY" secondItem="df9-HN-TUp" secondAttribute="centerY" id="mhO-rR-f5w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="facebookLogoButton" destination="apt-Pf-dRq" id="prn-SA-OPX"/>
+                                            <outlet property="kakaoMakersIntroduceButton" destination="d9q-t0-HyH" id="7R4-mK-tsF"/>
+                                            <outlet property="storyLogoButton" destination="x2Z-dy-29f" id="8ev-ns-YKD"/>
+                                            <outlet property="talkLogoButton" destination="28b-Il-3LD" id="0GE-ry-ufL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YFi-ig-Gay">
+                                        <rect key="frame" x="0.0" y="789.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YFi-ig-Gay" id="hv9-wq-iW7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VRa-Il-Fe2">
+                                        <rect key="frame" x="0.0" y="833" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRa-Il-Fe2" id="CeG-mj-SHD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wTr-yn-ccI"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u6O-zW-2P1" firstAttribute="top" secondItem="wTr-yn-ccI" secondAttribute="top" id="7sr-pw-jU3"/>
+                            <constraint firstItem="wTr-yn-ccI" firstAttribute="trailing" secondItem="u6O-zW-2P1" secondAttribute="trailing" id="LUc-a0-2uA"/>
+                            <constraint firstItem="wTr-yn-ccI" firstAttribute="bottom" secondItem="u6O-zW-2P1" secondAttribute="bottom" id="Rh5-Pk-XCA"/>
+                            <constraint firstItem="u6O-zW-2P1" firstAttribute="leading" secondItem="wTr-yn-ccI" secondAttribute="leading" id="oZk-JN-ORI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="u6O-zW-2P1" id="6iL-lO-CAX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnZ-OJ-HBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1441" y="1128"/>
+            <point key="canvasLocation" x="-1442.0289855072465" y="1127.6785714285713"/>
+        </scene>
+        <!--Entire View Controller-->
+        <scene sceneID="YsV-Rc-WAV">
+            <objects>
+                <viewController storyboardIdentifier="EntireVC" id="YeL-IG-Mcz" customClass="EntireViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ml6-4N-8aj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-cy-2mW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllItemTableViewCell" id="G3F-1X-39M" customClass="AllItemTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G3F-1X-39M" id="RyE-sy-1d1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U8F-Ir-AqR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IjG-cy-2mW" firstAttribute="leading" secondItem="U8F-Ir-AqR" secondAttribute="leading" id="XpT-uP-9RD"/>
+                            <constraint firstItem="U8F-Ir-AqR" firstAttribute="trailing" secondItem="IjG-cy-2mW" secondAttribute="trailing" id="hec-JH-hiK"/>
+                            <constraint firstItem="U8F-Ir-AqR" firstAttribute="bottom" secondItem="IjG-cy-2mW" secondAttribute="bottom" id="jKE-l6-izA"/>
+                            <constraint firstItem="IjG-cy-2mW" firstAttribute="top" secondItem="U8F-Ir-AqR" secondAttribute="top" id="k7l-Ou-sm0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="IjG-cy-2mW" id="366-AT-0LN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkW-va-ssr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="1890"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="7gC-zC-Lhl">
+            <objects>
+                <viewController storyboardIdentifier="NewVC" id="Y56-Tk-lKd" customClass="NewViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3G-ed-G4M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D45-c6-sAa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeekTableViewCell" rowHeight="120" id="UES-Fh-bHY">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UES-Fh-bHY" id="gfL-kk-sV7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 2주차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-dl-Gjr">
+                                                    <rect key="frame" x="25" y="46" width="364" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0Q-S8-ig5">
+                                                    <rect key="frame" x="25" y="72" width="200" height="1"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="bi3-iY-QRC"/>
+                                                        <constraint firstAttribute="height" constant="1" id="hSZ-CH-Mhx"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08.09 (월) - 08.15 (일)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGS-3d-MQe">
+                                                    <rect key="frame" x="25" y="78" width="364" height="17"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zUi-dl-Gjr" firstAttribute="leading" secondItem="gfL-kk-sV7" secondAttribute="leadingMargin" constant="5" id="2Ha-Nh-yA2"/>
+                                                <constraint firstItem="NGS-3d-MQe" firstAttribute="leading" secondItem="gfL-kk-sV7" secondAttribute="leadingMargin" constant="5" id="Dol-VI-SLe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NGS-3d-MQe" secondAttribute="trailing" constant="5" id="GPW-0p-MUB"/>
+                                                <constraint firstItem="zUi-dl-Gjr" firstAttribute="top" secondItem="gfL-kk-sV7" secondAttribute="topMargin" constant="35" id="M64-bC-X4Y"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zUi-dl-Gjr" secondAttribute="trailing" constant="5" id="Ov8-w5-CaH"/>
+                                                <constraint firstItem="NGS-3d-MQe" firstAttribute="top" secondItem="O0Q-S8-ig5" secondAttribute="bottom" constant="5" id="dN6-f0-jkJ"/>
+                                                <constraint firstItem="O0Q-S8-ig5" firstAttribute="leading" secondItem="gfL-kk-sV7" secondAttribute="leadingMargin" constant="5" id="g6u-Nh-sUF"/>
+                                                <constraint firstItem="O0Q-S8-ig5" firstAttribute="top" secondItem="zUi-dl-Gjr" secondAttribute="bottom" constant="5" id="uDm-gs-sK6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="20v-Q5-djL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D45-c6-sAa" firstAttribute="top" secondItem="20v-Q5-djL" secondAttribute="top" id="PsQ-xv-bjl"/>
+                            <constraint firstItem="20v-Q5-djL" firstAttribute="bottom" secondItem="D45-c6-sAa" secondAttribute="bottom" id="d4U-MJ-L3f"/>
+                            <constraint firstItem="D45-c6-sAa" firstAttribute="leading" secondItem="20v-Q5-djL" secondAttribute="leading" id="qbS-OI-iyh"/>
+                            <constraint firstItem="20v-Q5-djL" firstAttribute="trailing" secondItem="D45-c6-sAa" secondAttribute="trailing" id="xbe-9m-Dhf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="D45-c6-sAa" id="6X6-UH-dQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gX8-7O-eCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584.05797101449275" y="1889.7321428571427"/>
+        </scene>
+        <!--Category Apple View Controller-->
+        <scene sceneID="rvB-hP-rLL">
+            <objects>
+                <viewController storyboardIdentifier="CategoryAppleVC" id="Dhq-4o-kwj" customClass="CategoryAppleViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ncy-ey-BxM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vbM-f4-gPj">
+                                <rect key="frame" x="5" y="44" width="404" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="soH-oj-aAX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DM7-TY-t5q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vbM-f4-gPj" firstAttribute="top" secondItem="DM7-TY-t5q" secondAttribute="top" id="DFZ-Rh-JVM"/>
+                            <constraint firstItem="vbM-f4-gPj" firstAttribute="leading" secondItem="DM7-TY-t5q" secondAttribute="leading" constant="5" id="DKO-l1-TGT"/>
+                            <constraint firstItem="DM7-TY-t5q" firstAttribute="bottom" secondItem="vbM-f4-gPj" secondAttribute="bottom" id="KXh-uG-bDU"/>
+                            <constraint firstItem="DM7-TY-t5q" firstAttribute="trailing" secondItem="vbM-f4-gPj" secondAttribute="trailing" constant="5" id="zsV-TQ-6vk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="vbM-f4-gPj" id="v1S-Fs-Dfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLR-a7-q1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="2602"/>
+        </scene>
+        <!--Category Samsung View Controller-->
+        <scene sceneID="0Iv-O1-CJE">
+            <objects>
+                <viewController storyboardIdentifier="CategorySamsungVC" id="Px9-3n-3WS" customClass="CategorySamsungViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KvJ-5B-XoV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="r6W-r6-E0Q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X1z-Cb-tei">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kmv-VC-exF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r6W-r6-E0Q" firstAttribute="top" secondItem="Kmv-VC-exF" secondAttribute="top" id="4X4-EH-b1s"/>
+                            <constraint firstItem="Kmv-VC-exF" firstAttribute="bottom" secondItem="r6W-r6-E0Q" secondAttribute="bottom" id="C5H-7Y-UiK"/>
+                            <constraint firstItem="Kmv-VC-exF" firstAttribute="trailing" secondItem="r6W-r6-E0Q" secondAttribute="trailing" id="HQj-W7-yRl"/>
+                            <constraint firstItem="r6W-r6-E0Q" firstAttribute="leading" secondItem="Kmv-VC-exF" secondAttribute="leading" id="qQB-ao-w5X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx0-yE-TBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="2602"/>
+        </scene>
+        <!--Category Xiaomi View Controller-->
+        <scene sceneID="zCO-xk-tG7">
+            <objects>
+                <viewController storyboardIdentifier="CategoryXiaomiVC" id="0Do-Rj-sS6" customClass="CategoryXiaomiViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCa-Lf-I5P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O4m-Wn-xyt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zv-rs-N1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="2602"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="rhv-5Q-OWd">
+            <objects>
+                <viewController storyboardIdentifier="CategoryVC" id="YwQ-tS-zUQ" customClass="CategoryViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csK-Mx-bI4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hvg-WS-Po2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJn-f2-RKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="1890"/>
+        </scene>
+        <!--Insiders View Controller-->
+        <scene sceneID="LdF-d0-ibQ">
+            <objects>
+                <viewController storyboardIdentifier="InsidersVC" id="vke-xI-pFo" customClass="InsidersViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ap-sW-9n7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JOR-jw-xL2"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNm-IJ-Jmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="1890"/>
         </scene>
         <!--Home Tab View Controller-->
         <scene sceneID="ZIH-Ch-QVs">
@@ -220,66 +692,9 @@
                     <view key="view" contentMode="scaleToFill" id="KMZ-mD-rcu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-Y3-Dcx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuBarTableViewCell" rowHeight="60" id="M5T-CC-KEp" customClass="MenuBarTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M5T-CC-KEp" id="awP-0r-ro5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N0X-pw-6UV">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="60"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RB7-pJ-Po7">
-                                                        <size key="itemSize" width="128" height="128"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells/>
-                                                </collectionView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="N0X-pw-6UV" secondAttribute="trailing" constant="20" id="Jlq-wn-V0Y"/>
-                                                <constraint firstItem="N0X-pw-6UV" firstAttribute="leading" secondItem="awP-0r-ro5" secondAttribute="leading" constant="20" id="daU-7n-Q15"/>
-                                                <constraint firstAttribute="bottom" secondItem="N0X-pw-6UV" secondAttribute="bottom" id="kPV-K1-cp3"/>
-                                                <constraint firstItem="N0X-pw-6UV" firstAttribute="top" secondItem="awP-0r-ro5" secondAttribute="top" id="xw9-vA-ESg"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <outlet property="collectionView" destination="N0X-pw-6UV" id="Aoz-eR-RfM"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="530" id="9n9-1i-bMD" customClass="AllItemTableViewCell" customModule="KakaoMakers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84.5" width="414" height="530"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9n9-1i-bMD" id="5ir-QR-PIi">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="530"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K10-6U-hHE"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="MnH-Y3-Dcx" firstAttribute="trailing" secondItem="K10-6U-hHE" secondAttribute="trailing" id="5zR-FE-DFX"/>
-                            <constraint firstAttribute="bottom" secondItem="MnH-Y3-Dcx" secondAttribute="bottom" id="9wZ-Uf-WE9"/>
-                            <constraint firstItem="MnH-Y3-Dcx" firstAttribute="leading" secondItem="K10-6U-hHE" secondAttribute="leading" id="DKx-Ky-7Dq"/>
-                            <constraint firstItem="MnH-Y3-Dcx" firstAttribute="top" secondItem="KMZ-mD-rcu" secondAttribute="top" id="fAl-LA-bK5"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="MnH-Y3-Dcx" id="R7W-Et-tp3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phA-XZ-mZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -479,16 +894,47 @@
             </objects>
             <point key="canvasLocation" x="1149.2753623188407" y="1125.6696428571429"/>
         </scene>
+        <!--Category Huawei View Controller-->
+        <scene sceneID="o01-2h-ZUo">
+            <objects>
+                <viewController storyboardIdentifier="CategoryHuaweiVC" id="9Sy-cU-Usi" customClass="CategoryHuaweiViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haU-Vu-jcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PXv-au-Tx5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geT-kg-pAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135" y="2602"/>
+        </scene>
+        <!--Category Vivo View Controller-->
+        <scene sceneID="gHd-wi-ork">
+            <objects>
+                <viewController storyboardIdentifier="CategoryVivoVC" id="DTq-4n-GT2" customClass="CategoryVivoViewController" customModule="KakaoMakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ikW-4f-HjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ufx-Ru-VYw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ci1-4s-kJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2880" y="2602"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="facebookblacklogo" width="9" height="16"/>
         <image name="home" width="24" height="24"/>
+        <image name="kakaoblack" width="22" height="20"/>
+        <image name="kakaochannellogo" width="23.5" height="23.5"/>
+        <image name="kakaostoryblacklogo" width="22" height="22"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

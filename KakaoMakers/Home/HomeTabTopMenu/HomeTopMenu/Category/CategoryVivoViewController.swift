@@ -1,13 +1,13 @@
 //
-//  RecentReadTabViewController.swift
+//  CategoryVivoViewController.swift
 //  KakaoMakers
 //
-//  Created by 신미지 on 2021/07/26.
+//  Created by 신미지 on 2021/08/11.
 //
 
 import UIKit
 
-class RecentReadTabViewController: UIViewController {
+class CategoryVivoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
