@@ -75,7 +75,8 @@ extension EntireViewController:
     cell.titleLabel.text = product.name
     cell.contentLabel.text = product.description
     cell.ordererCountLabel.text = "\(product.countInStock)개의 재고가 있습니다."
-    cell.loveButton.setTitle(" \(product.numReviews) 개", for: .normal)
+//    cell.loveButton.setTitle(" \((product.reviews[indexPath.row].rating) / (product.reviews).count)점", for: .normal)
+    cell.commentButton.setTitle("  \((product.reviews).count)", for: .normal)
     return cell
   }
   

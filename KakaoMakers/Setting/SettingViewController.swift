@@ -63,7 +63,6 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
   ) -> UITableViewCell {
     let informCell = tableView.dequeueReusableCell(withIdentifier: "InformTableViewCell", for: indexPath)
     let detailCell = tableView.dequeueReusableCell(withIdentifier: "DetailInformTableViewCell", for: indexPath)
-    
     switch indexPath.section {
     case 0:
       detailCell.textLabel?.text = personalInfo[indexPath.row]

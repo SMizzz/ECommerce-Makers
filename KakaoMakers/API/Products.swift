@@ -17,6 +17,7 @@ struct Product: Codable {
   var description: String = ""
   var countInStock: Int = 0
   var numReviews: Int = 0
+  var reviews: [Review]
   
   enum CodingKeys: String, CodingKey {
     case id = "_id"
@@ -28,6 +29,7 @@ struct Product: Codable {
     case description
     case countInStock
     case numReviews
+    case reviews
   }
   
   init(from decoder: Decoder) throws {
@@ -41,6 +43,7 @@ struct Product: Codable {
     description = try values.decode(String.self, forKey: .description)
     countInStock = try values.decode(Int.self, forKey: .countInStock)
     numReviews = try values.decode(Int.self, forKey: .numReviews)
+    reviews = try values.decode(Array.self, forKey: .reviews)
   }
   
 }

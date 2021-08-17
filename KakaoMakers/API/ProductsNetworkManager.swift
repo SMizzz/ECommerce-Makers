@@ -18,6 +18,7 @@ class ProductsNetworkManager {
       case .success(let res):
         do {
           let productData = try JSONDecoder().decode(ProductsData.self, from: res.data)
+          print("==========",productData.products)
           completion(productData.products)
           ProgressHUD.dismiss()
         } catch let err {

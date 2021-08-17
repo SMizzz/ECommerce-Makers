@@ -12,7 +12,7 @@ import Kingfisher
 
 class HomeTabViewController: TabmanViewController {
   private var viewControllers: Array<UIViewController> = []
-  //EntireVC, NewVC, CategoryVC, InsidersVC
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     viewSetup()
@@ -22,12 +22,10 @@ class HomeTabViewController: TabmanViewController {
     let entireVC = self.storyboard?.instantiateViewController(withIdentifier: "EntireVC")
     let newVC = self.storyboard?.instantiateViewController(withIdentifier: "NewVC")
     let categoryVC = self.storyboard?.instantiateViewController(withIdentifier: "CategoryVC")
-    let insidersVC = self.storyboard?.instantiateViewController(withIdentifier: "InsidersVC")
     
     viewControllers.append(entireVC!)
     viewControllers.append(newVC!)
     viewControllers.append(categoryVC!)
-    viewControllers.append(insidersVC!)
     self.dataSource = self
     
     let bar = TMBar.ButtonBar()
@@ -82,8 +80,6 @@ extension HomeTabViewController:
       item.title = "신규"
     } else if (index == 2) {
       item.title = "카테고리"
-    } else if (index == 3) {
-      item.title = "내부자들👀"
     }
     return item
   }

@@ -14,6 +14,7 @@ class AllItemTableViewCell: UITableViewCell {
   @IBOutlet weak var contentLabel: UILabel!
   @IBOutlet weak var ordererCountLabel: UILabel!
   @IBOutlet weak var loveButton: UIButton!
+  @IBOutlet weak var commentButton: UIButton!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -27,6 +28,9 @@ class AllItemTableViewCell: UITableViewCell {
   private func configureButton() {
     loveButton.layer.borderWidth = 1
     loveButton.layer.borderColor = UIColor.lightGray.cgColor
+    
+    commentButton.layer.borderWidth = 1
+    commentButton.layer.borderColor = UIColor.lightGray.cgColor
     
     let attrString = NSMutableAttributedString(string: contentLabel.text!)
     let paragraphStyle = NSMutableParagraphStyle()

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,25 +41,46 @@
                         <color key="textColor" red="0.84936124089999998" green="0.22715115550000001" blue="0.1663666368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-nM-Pjw">
-                        <rect key="frame" x="15" y="451" width="124" height="48"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="124" id="Njh-dX-vGn"/>
-                            <constraint firstAttribute="height" constant="48" id="gry-ZE-u0V"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
-                        <state key="normal" title="  2,500 명" image="love_empty">
-                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                        </state>
-                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="05j-7e-7Tg">
+                        <rect key="frame" x="15" y="451" width="218" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-nM-Pjw">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Njh-dX-vGn"/>
+                                    <constraint firstAttribute="height" constant="45" id="gry-ZE-u0V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  4.5점">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="star" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLT-QT-O1c">
+                                <rect key="frame" x="118" y="0.0" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="05O-UO-hKz"/>
+                                    <constraint firstAttribute="height" constant="45" id="CsO-5P-PMT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  3" image="comment">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="05j-7e-7Tg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2UB-wb-oV1"/>
+                    <constraint firstItem="05j-7e-7Tg" firstAttribute="top" secondItem="bOp-q7-zqM" secondAttribute="bottom" constant="20" id="F5Z-b9-Vnd"/>
                     <constraint firstItem="0ci-4u-vwJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FK2-D1-W4E"/>
                     <constraint firstItem="ckH-7v-tnm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Hnb-pR-gQT"/>
                     <constraint firstItem="bOp-q7-zqM" firstAttribute="top" secondItem="fjO-6p-wdc" secondAttribute="bottom" constant="20" id="I3G-sQ-4JV"/>
-                    <constraint firstItem="PU7-nM-Pjw" firstAttribute="top" secondItem="bOp-q7-zqM" secondAttribute="bottom" constant="20" id="Sf3-ag-B4s"/>
                     <constraint firstItem="0ci-4u-vwJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="URJ-Aw-4xQ"/>
                     <constraint firstAttribute="trailing" secondItem="bOp-q7-zqM" secondAttribute="trailing" constant="15" id="faL-g7-yKE"/>
                     <constraint firstItem="fjO-6p-wdc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ftD-Q8-gsq"/>
@@ -67,12 +89,12 @@
                     <constraint firstAttribute="trailing" secondItem="ckH-7v-tnm" secondAttribute="trailing" constant="15" id="nDX-5d-eVE"/>
                     <constraint firstAttribute="trailing" secondItem="fjO-6p-wdc" secondAttribute="trailing" constant="15" id="rBU-vt-1Tu"/>
                     <constraint firstItem="bOp-q7-zqM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rm4-66-epW"/>
-                    <constraint firstItem="PU7-nM-Pjw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="thT-BV-ZJ6"/>
                     <constraint firstItem="fjO-6p-wdc" firstAttribute="top" secondItem="ckH-7v-tnm" secondAttribute="bottom" constant="20" id="wky-ws-cHM"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="commentButton" destination="OLT-QT-O1c" id="YjS-ZY-w7i"/>
                 <outlet property="contentLabel" destination="fjO-6p-wdc" id="jHv-1a-8tx"/>
                 <outlet property="itemImageView" destination="0ci-4u-vwJ" id="Whw-PQ-god"/>
                 <outlet property="loveButton" destination="PU7-nM-Pjw" id="8be-XC-V8N"/>
@@ -83,7 +105,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="comment" width="24" height="24"/>
         <image name="itemImage" width="456" height="302"/>
-        <image name="love_empty" width="23.5" height="23.5"/>
+        <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>
